@@ -1,0 +1,332 @@
+[
+  {
+    "title": "A Forward Reachability Perspective on Robust Control Invariance and Discount Factors in Reachability Analysis",
+    "authors": "J. J. Choi*, D. Lee*, B. Li, J. P. How, K. Sreenath, S. L. Herbert, and C. J. Tomlin",
+    "year": "Under Review",
+    "venue": "*equally contributed",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2310.17180"
+      }
+    ]
+  },
+  {
+    "title": "Adaptive Reachability Safety (AReS) Filter for Systems with Unknown Dynamic Models",
+    "authors": "G. Chenevert, X. Zhang, J. Li, A. Kannan, F. M. Tariq, J. D’sa, D. Isele, S. Bae, and D. Lee",
+    "year": "Under Review",
+    "venue": "",
+    "links": [
+      {
+        "label": "VIDEO",
+        "url": "https://www.youtube.com/watch?v=lq1IJwMMt2g"
+      }
+    ]
+  },
+  {
+    "title": "Hopf–Lax-MPC: Generalized Hopf–Lax Formula-based Model Predictive Control for Long-Horizon Real-Time Applications",
+    "authors": "X. Zhang, B. Bialy, and D. Lee",
+    "year": "Under Review",
+    "venue": "",
+    "links": []
+  },
+  {
+    "title": "A Hamilton–Jacobi Reachability Framework with Soft Constraints for Safety-Critical Systems",
+    "authors": "C. E. Mballo, D. Lee, and C. J. Tomlin",
+    "year": "Under Review",
+    "venue": "",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2510.24933"
+      }
+    ]
+  },
+  {
+    "title": "Characterization and Analysis of Emergency Landing Flight Envelopes with Graded Safety Specifications",
+    "authors": "C. E. Mballo, B. L. Ferguson, Inkyu Jang, D. Lee, and C. J. Tomlin",
+    "year": "Under Review",
+    "venue": "",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2606.05350"
+      }
+    ]
+  },
+  {
+    "title": "Extending and Unifying the Fundamental Tasks of Hamilton-Jacobi Reachability Analysis",
+    "authors": "D. Hirsch, W. Sharpless, D. Lee, and S. Herbert",
+    "year": "Under Review",
+    "venue": "",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2608.18060"
+      }
+    ]
+  },
+  {
+    "title": "Least Conservative Robust Safety Filter via Hamilton-Jacobi Reachability Analysis",
+    "authors": "X. Zhang, Y. Su, G. Chenevert, F. M. Tariq, J. D’sa, D. Isele, S. Bae, and D. Lee",
+    "year": "2026",
+    "venue": "IEEE Robotics and Automation Letters, Accepted.",
+    "links": [
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/PFgdaB3Zqio"
+      }
+    ]
+  },
+  {
+    "title": "On the Hamilton-Jacobi Reachability of Systems with Input Delay",
+    "authors": "S. Oh, D. Lee, H. E. Tseng, G. Pandey, and G. Orosz",
+    "year": "2026",
+    "venue": "IEEE Transactions on Automatic Control, Accepted",
+    "links": []
+  },
+  {
+    "title": "Deep Reinforcement Learning for Reach-Avoid-Stay Problems",
+    "authors": "G. Chenevert, J. Li, S. Bae, and D. Lee",
+    "year": "2026",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2026",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2410.02898"
+      }
+    ]
+  },
+  {
+    "title": "Time-Series Data-Driven Three Dimensional Shape Control of Deformable Linear Objects Using a Dual-Arm Robot with Dynamic Model Updating",
+    "authors": "J. Choi, M. H. Gebrezgihier, D. Lee, and A. Hong",
+    "year": "2026",
+    "venue": "IEEE Robotics and Automation Letters",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11355841"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/IyslrHphYrI"
+      }
+    ]
+  },
+  {
+    "title": "ZSG-MPPI: Robust Model-Predictive Path-Integral Method for Disturbance Handling",
+    "authors": "X. Zhang, G. Chenevert, Y. Su, F. M. Tariq, J. D’sa, S. Bae, and D. Lee",
+    "year": "2025",
+    "venue": "IEEE Robotics and Automation Letters",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11206415"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/fxr_PS0Ufms"
+      }
+    ]
+  },
+  {
+    "title": "Certifiable Reachability Learning Using a New Lipschitz Continuous Value Function",
+    "authors": "J. Li, D. Lee, J. Lee, K. S. Dong, S. Sojoudi, and C. J. Tomlin",
+    "year": "2025",
+    "venue": "IEEE Robotics and Automation Letters",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10855593"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://ieeexplore.ieee.org/ielx8/7083369/10893718/10855593/supp1-3535183.mp4?arnumber=10855593"
+      }
+    ]
+  },
+  {
+    "title": "Efficient Computation of State-Constrained Reachability Problems Using Hopf-Lax Formulae",
+    "authors": "D. Lee and C. J. Tomlin",
+    "year": "2023",
+    "venue": "IEEE Transactions on Automatic Control",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10032791"
+      }
+    ]
+  },
+  {
+    "title": "Interaction-Aware Trajectory Planning for Autonomous Vehicles with Analytic Integration of Neural Networks into Model Predictive Control",
+    "authors": "P. Gupta, D. Isele, D. Lee, and S. Bae",
+    "year": "2023",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2023",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10160890&origin_source=search&origin_method=searchbar"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/BbCc-GZFq6s"
+      }
+    ]
+  },
+  {
+    "title": "RAMP: A Risk-Aware Mapping and Planning Pipeline for Fast Off-Road Ground Robot Navigation",
+    "authors": "L. Sharma, M. Everett, D. Lee, X. Cai, P. Osteen, and J. P. How",
+    "year": "2023",
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA), 2023",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10160602"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/SoZvYN0KI7I"
+      }
+    ]
+  },
+  {
+    "title": "Convexifying State-Constrained Optimal Control Problems",
+    "authors": "D. Lee, S. Deka, and C. J. Tomlin",
+    "year": "2022",
+    "venue": "IEEE Transactions on Automatic Control",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9946377"
+      }
+    ]
+  },
+  {
+    "title": "Real-time Robust Receding Horizon Planning using Hamilton-Jacobi Reachability Analysis",
+    "authors": "H. Seo, D. Lee, C. Y. Son, I. Jang, C. J. Tomlin, and H. J. Kim",
+    "year": "2022",
+    "venue": "IEEE Transactions on Robotics",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9855830"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://ieeexplore.ieee.org/ielx7/8860/10040949/9855830/supp1-3187291.mp4?arnumber=9855830"
+      }
+    ]
+  },
+  {
+    "title": "Towards Cyber-Physical Systems Robust to Communication Delays: A Differential Game Approach",
+    "authors": "S. A. Deka, D. Lee, and C. J. Tomlin",
+    "year": "2021",
+    "venue": "IEEE Control Systems Letters (L-CSS)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9651534"
+      }
+    ]
+  },
+  {
+    "title": "Robust Control Barrier-Value Functions for Safety-Critical Control",
+    "authors": "J. J. Choi, D. Lee, K. Sreenath, C. J. Tomlin, and S. L. Herbert",
+    "year": "2021",
+    "venue": "IEEE Conference on Decision and Control (CDC)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9683085"
+      }
+    ]
+  },
+  {
+    "title": "A Hopf-Lax Formula in Hamilton-Jacobi Analysis for Reach-Avoid Problems",
+    "authors": "D. Lee and C. J. Tomlin",
+    "year": "2020",
+    "venue": "IEEE Control Systems Letters (L-CSS)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9142284"
+      }
+    ]
+  },
+  {
+    "title": "The Optimal Control of Battery Fast Charging Based-on Pontryagin’s Minimum Principle",
+    "authors": "S. Park, D. Lee, H. J. Ahn, C. J. Tomlin, and S. Moura",
+    "year": "2020",
+    "venue": "IEEE Conference on Decision and Control (CDC)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9304409"
+      }
+    ]
+  },
+  {
+    "title": "Hamilton-Jacobi Equation for Optimal Control Problems and Zero-Sum Game Problems with State Constraints",
+    "authors": "D. Lee, A. Keimer, A. M. Bayen, and C. J. Tomlin",
+    "year": "2020",
+    "venue": "IEEE Conference on Decision and Control (CDC)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9304334"
+      }
+    ]
+  },
+  {
+    "title": "Robust Trajectory Planning for a Multirotor against Disturbance based on Hamilton-Jacobi Reachability Analysis",
+    "authors": "H. Seo, D. Lee, C. Y. Son, C. J. Tomlin, and H. J. Kim",
+    "year": "2019",
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8968126"
+      },
+      {
+        "label": "VIDEO",
+        "url": "https://youtu.be/_QKN-MbgsaE"
+      }
+    ]
+  },
+  {
+    "title": "Iterative Method using the Generalized Hopf Formula: Avoiding Spatial Discretization for Computing Solutions of Hamilton-Jacobi Equations for Nonlinear Systems",
+    "authors": "D. Lee and C. J. Tomlin",
+    "year": "2019",
+    "venue": "IEEE Conference on Decision and Control (CDC)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9029572"
+      }
+    ]
+  },
+  {
+    "title": "Removing Leaking Corners to Reduce Dimensionality in Hamilton-Jacobi Reachability",
+    "authors": "D. Lee*, M. Chen*, and C. J. Tomlin",
+    "year": "2019",
+    "venue": "*equally contributed IEEE International Conference on Robotics and Automation (ICRA)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8793890"
+      }
+    ]
+  },
+  {
+    "title": "A Risk-Sensitive Finite-Time Reachability Approach for Safety of Stochastic Dynamic Systems",
+    "authors": "M. P. Chapman, J. Lacotte, A. Tamar, D. Lee, K. M. Smith, V. Cheng, J. F. Fisac, S. Jha, M. Pavone, and C. J. Tomlin",
+    "year": "2019",
+    "venue": "American Control Conference (ACC)",
+    "links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8815169"
+      }
+    ]
+  }
+]
