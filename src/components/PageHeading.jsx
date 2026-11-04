@@ -5,10 +5,7 @@ export default function PageHeading({ title, label = 'INTELLIGENT CONTROLS LAB',
         <span className="red-square" />
         {label}
       </p>
-      <h1 className="page-title">
-        {title}
-        <span className="red-dot">.</span>
-      </h1>
+      <h1 className="page-title">{title}</h1>
       {description && <p className="page-description">{description}</p>}
     </header>
   )

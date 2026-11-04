@@ -72,13 +72,13 @@ export default function Layout({ pathname, children }) {
               Controls Lab<span>.</span>
             </a>
             <p>
-              Precision in theory.
+              Control theory, robotics,
               <br />
-              Possibility in motion.
+              optimization, and learning.
             </p>
           </div>
           <div>
-            <span className="eyebrow">OUR HOME</span>
+            <span className="eyebrow">AFFILIATION</span>
             <p>
               Department of Mechanical
               <br />
@@ -91,12 +91,12 @@ export default function Layout({ pathname, children }) {
             </a>
           </div>
           <div>
-            <span className="eyebrow">LET’S CONNECT</span>
+            <span className="eyebrow">CONTACT</span>
             <a className="footer-email" href="mailto:donggun_lee@ncsu.edu">
               donggun_lee@ncsu.edu ↗
             </a>
             <a className="text-link" href="/join-us">
-              Build what comes next with us ↗
+              Ph.D. & postdoctoral opportunities ↗
             </a>
           </div>
         </div>

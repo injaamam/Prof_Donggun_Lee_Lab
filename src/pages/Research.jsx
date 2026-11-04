@@ -43,15 +43,9 @@ export default function Research() {
   return (
     <>
       <PageHeading
-        title={
-          <>
-            More intelligent.
-            <br />
-            <em>By design</em>
-          </>
-        }
-        label="RESEARCH / FROM THEORY TO PRACTICE"
-        description="We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information."
+        title="Research areas"
+        label="CONTROL THEORY · ROBOTICS · LEARNING"
+        description="Our research focuses on two areas: data-driven safe autonomy with theoretical guarantees, and efficient real-time control under disturbances and model uncertainty."
       />
       <nav className="chapter-nav" aria-label="Research areas">
         <a href="#safe-autonomy">
@@ -61,27 +55,23 @@ export default function Research() {
           <span>02</span> Real-time control ↘
         </a>
       </nav>
-      <figure className="research-overview">
-        <div className="research-principles">
-          {['Effective', 'Safe', 'Computationally efficient', 'Robust', 'Self-reasoning'].map(
-            (label, i) => (
-              <div key={label}>
-                <span className="eyebrow">0{i + 1}</span>
-                <span>{label}</span>
-              </div>
-            ),
-          )}
+      <div className="research-methods" aria-label="Research methods and applications">
+        <div>
+          <h2>Methods</h2>
+          <p>
+            Optimal control · Hamilton–Jacobi reachability · Control barrier functions ·
+            Reinforcement learning · Mathematical optimization
+          </p>
         </div>
-        <figcaption>THEORY → COMPUTATION → AUTONOMY</figcaption>
-      </figure>
+        <div>
+          <h2>Applications</h2>
+          <p>Ground vehicle navigation · Autonomous driving · Aerial vehicles · Legged robots</p>
+        </div>
+      </div>
       <section className="research-chapter section-grid" id="safe-autonomy">
         <aside className="section-marker">
           <span className="eyebrow">01 / RESEARCH AREA</span>
-          <p>
-            Data-driven methods.
-            <br />
-            Provable guarantees.
-          </p>
+          <p>Hamilton–Jacobi reachability, control barrier functions, and safety guarantees.</p>
         </aside>
         <div className="document research-page">
           <ResearchBody blocks={content.research.slice(6, split)} papers={safetyPapers} />
@@ -90,11 +80,7 @@ export default function Research() {
       <section className="research-chapter section-grid" id="real-time-control">
         <aside className="section-marker">
           <span className="eyebrow">02 / RESEARCH AREA</span>
-          <p>
-            Fast decisions.
-            <br />
-            Robust performance.
-          </p>
+          <p>Optimal control solvers, model predictive control, and robust planning.</p>
         </aside>
         <div className="document research-page">
           <ResearchBody blocks={content.research.slice(split)} papers={controlPapers} />

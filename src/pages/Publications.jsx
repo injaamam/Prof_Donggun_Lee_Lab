@@ -18,9 +18,9 @@ export default function Publications() {
   return (
     <>
       <PageHeading
-        title="A record of inquiry"
-        label="PUBLICATIONS / THE ARCHIVE"
-        description="The theories, methods, and experiments behind our work. Explore publications in control, robotics, optimization, and learning."
+        title="Publications"
+        label="JOURNAL ARTICLES · CONFERENCE PAPERS · PREPRINTS"
+        description="Browse papers on control theory, robot safety, reachability analysis, optimization, and learning. Filter by year or search by title, author, or venue. PDF and video links are provided where available."
       />
       <div className="archive-toolbar">
         <label className="search-label">

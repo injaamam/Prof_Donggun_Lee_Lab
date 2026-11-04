@@ -1,5 +1,4 @@
 import VideoCard from '../components/VideoCard'
-import ControlField from '../components/ControlField'
 import Publication from '../components/Publication'
 import content from '../data/source-content.json'
 import publications from '../data/publications.json'
@@ -7,65 +6,77 @@ import publications from '../data/publications.json'
 export default function Home() {
   return (
     <>
-      <section className="home-hero">
+      <section className="home-hero informative-hero">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="red-square" /> NC STATE · INTELLIGENT CONTROLS LAB
+            <span className="red-square" />
+            NORTH CAROLINA STATE UNIVERSITY
           </p>
           <h1>
-            We care how
+            Intelligent
             <br />
-            things <em>move.</em>
+            Controls Lab
           </h1>
+          <h2 className="research-statement">
+            Safe autonomy and real-time control for mobile robots.
+          </h2>
           <p className="hero-description">
-            Advancing the science of control.
-            <br />
-            Enabling a more intelligent, autonomous world.
+            We develop control theory and algorithms that help robots navigate safely and respond to
+            disturbances, uncertain models, and incomplete sensor information.
           </p>
-          <a className="button button-solid" href="/research">
-            Explore our research <span>↗</span>
-          </a>
-          <div className="hero-footnote">
-            <span>THEORY → ALGORITHMS → REAL WORLD</span>
-            <a href="#research">Discover the lab ↓</a>
+          <div className="hero-actions">
+            <a className="button button-solid" href="/research">
+              Research areas <span>↗</span>
+            </a>
+            <a className="text-link" href="/publications">
+              Publications ↗
+            </a>
           </div>
         </div>
-        <ControlField />
-      </section>
-      <section className="mission section-grid">
-        <div className="section-marker">
-          <span className="eyebrow">01 / OUR APPROACH</span>
-          <span className="small-note">
-            From first principles
-            <br />
-            to real-world impact.
-          </span>
-        </div>
-        <div>
-          <h2>
-            Fundamental questions.
-            <br />
-            <em>Real-world answers.</em>
-          </h2>
-          <p className="lead">
-            We develop fundamental theories, design efficient numerical algorithms, and test our
-            ideas in the real world to control dynamic systems precisely, efficiently, and
-            effectively.
-          </p>
-          <p className="muted">
-            At the intersection of optimal control, learning, and robotics, we turn mathematical
-            insight into systems that can navigate an uncertain world.
-          </p>
-        </div>
+        <aside className="lab-overview" aria-label="Lab overview">
+          <h2>Lab overview</h2>
+          <dl>
+            <div>
+              <dt>Principal investigator</dt>
+              <dd>
+                <a href="/team">Dr. Donggun Lee ↗</a>
+                <span>Assistant Professor</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Department</dt>
+              <dd>
+                Mechanical and Aerospace Engineering<span>NC State University · Raleigh, NC</span>
+              </dd>
+            </div>
+            <div>
+              <dt>Methods</dt>
+              <dd>
+                Optimal control, Hamilton–Jacobi reachability, reinforcement learning, and
+                mathematical optimization
+              </dd>
+            </div>
+            <div>
+              <dt>Applications</dt>
+              <dd>
+                Ground vehicle navigation, autonomous driving, aerial vehicles, and legged robots
+              </dd>
+            </div>
+          </dl>
+          <a className="recruiting-link" href="/join-us">
+            <span className="red-square" />
+            Recruiting 2–3 Ph.D. students <span>↗</span>
+          </a>
+        </aside>
       </section>
       <section className="research-preview section-block" id="research">
         <div className="section-top">
           <div>
-            <p className="eyebrow">02 / RESEARCH DIRECTIONS</p>
-            <h2>Intelligence, in motion.</h2>
+            <p className="eyebrow">01 / RESEARCH AREAS</p>
+            <h2>Safe autonomy & real-time control</h2>
           </div>
           <a className="text-link" href="/research">
-            Our research ↗
+            Research details ↗
           </a>
         </div>
         <div className="research-pair">
@@ -79,12 +90,13 @@ export default function Home() {
               <span className="image-index">01 / SAFETY</span>
             </div>
             <div className="research-feature-title">
-              <h3>Safe by design.</h3>
+              <h3>Data-driven safe autonomy</h3>
               <span>↗</span>
             </div>
             <p>
-              Data-driven safe autonomy and theoretical guarantees. Learning systems that know how
-              to stay safe.
+              We combine Hamilton–Jacobi reachability, control barrier functions, and learning to
+              establish safety guarantees for robots with uncertain dynamics or incomplete
+              information.
             </p>
             <span className="eyebrow">REACHABILITY · LEARNING · FORMAL SAFETY</span>
           </a>
@@ -98,12 +110,12 @@ export default function Home() {
               <span className="image-index">02 / CONTROL</span>
             </div>
             <div className="research-feature-title">
-              <h3>Ready for the real world.</h3>
+              <h3>Real-time robust control</h3>
               <span>↗</span>
             </div>
             <p>
-              Real-time control, robustness, and adaptability. Efficient algorithms for decisions
-              that cannot wait.
+              We develop efficient optimal control solvers and model predictive control methods for
+              robots that must replan in real time and handle disturbances.
             </p>
             <span className="eyebrow">OPTIMIZATION · PLANNING · ROBUST CONTROL</span>
           </a>
@@ -112,8 +124,8 @@ export default function Home() {
       <section className="section-block selected-work">
         <div className="section-top">
           <div>
-            <p className="eyebrow">03 / SELECTED PUBLICATIONS</p>
-            <h2>Ideas moving forward.</h2>
+            <p className="eyebrow">02 / PUBLICATIONS</p>
+            <h2>Recent publications</h2>
           </div>
           <a className="text-link" href="/publications">
             All publications ↗
@@ -132,10 +144,10 @@ export default function Home() {
       <section className="section-block">
         <div className="section-top">
           <div>
-            <p className="eyebrow">04 / IN THE FIELD</p>
-            <h2>Theory meets reality.</h2>
+            <p className="eyebrow">03 / EXPERIMENTS</p>
+            <h2>Robot experiments & control demonstrations</h2>
           </div>
-          <span className="small-note">Watch our systems in action.</span>
+          <span className="small-note">Navigation, safety filtering, and robust control.</span>
         </div>
         <div className="video-grid">
           {content.homeVideos.map((video) => (
@@ -145,20 +157,19 @@ export default function Home() {
       </section>
       <section className="join-banner">
         <div>
-          <p className="eyebrow">THE NEXT CHAPTER</p>
+          <p className="eyebrow">04 / OPEN POSITIONS</p>
           <h2>
-            Good questions.
-            <br />
-            <em>Great company.</em>
+            Ph.D. recruitment &<br />
+            postdoctoral inquiries
           </h2>
         </div>
         <div>
           <p>
-            Help shape the future of intelligent control. We welcome curious minds with an appetite
-            for challenging problems.
+            We are recruiting 2–3 Ph.D. students in control, robotics, optimization, and learning.
+            Prospective postdoctoral researchers can contact Prof. Lee about research opportunities.
           </p>
           <a className="button button-light" href="/join-us">
-            Find your place at ICL <span>↗</span>
+            Application instructions <span>↗</span>
           </a>
         </div>
       </section>

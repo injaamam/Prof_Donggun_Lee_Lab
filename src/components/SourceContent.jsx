@@ -56,7 +56,14 @@ export default function SourceContent({ blocks }) {
         <ul key={index}>
           {block.items.map((item, itemIndex) => (
             <li key={itemIndex}>
-              <InlineContent content={item} />
+              {item.length > 1 && typeof item[0] === 'string' ? (
+                <>
+                  <strong>{item[0]}</strong>
+                  <InlineContent content={item.slice(1)} />
+                </>
+              ) : (
+                <InlineContent content={item} />
+              )}
             </li>
           ))}
         </ul>
