@@ -13,13 +13,34 @@ function InlineContent({ content }) {
 }
 
 export default function SourceContent({ blocks }) {
-  return blocks.map((block, index) => {
+  const grouped = []
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i]
+    grouped.push(block)
+    if (block.type === 'label' && block.content[0] === 'VIDEOS') {
+      const videos = []
+      while (
+        i + 1 < blocks.length &&
+        (blocks[i + 1].type === 'video' ||
+          (blocks[i + 1].type === 'label' && blocks[i + 1].content[0] === 'VIDEOS'))
+      ) {
+        i++
+        if (blocks[i].type === 'video') videos.push(blocks[i])
+      }
+      grouped.push({ type: 'video-group', videos })
+    }
+  }
+  return grouped.map((block, index) => {
+    if (block.type === 'video-group')
+      return (
+        <div key={index} className="video-grid research-videos">
+          {block.videos.map((video) => (
+            <VideoCard key={video.id} {...video} />
+          ))}
+        </div>
+      )
     if (block.type === 'heading')
-      return index === 0 ? (
-        <h1 key={index} className="page-title">
-          <InlineContent content={block.content} />
-        </h1>
-      ) : (
+      return (
         <h2 key={index}>
           <InlineContent content={block.content} />
         </h2>
@@ -40,8 +61,37 @@ export default function SourceContent({ blocks }) {
           ))}
         </ul>
       )
+    if (
+      block.type === 'image' &&
+      (block.src.includes('safe-autonomy') || block.src.includes('realtime-control'))
+    ) {
+      const applications = block.src.includes('safe-autonomy')
+        ? ['Ground vehicle navigation', 'Autonomous driving', 'Aerial vehicles']
+        : ['Ground vehicles', 'Aerial vehicles', 'Legged robots']
+      return (
+        <div className="application-types" key={index}>
+          <span className="eyebrow">APPLICATIONS</span>
+          {applications.map((label) => (
+            <span key={label}>{label}</span>
+          ))}
+        </div>
+      )
+    }
     if (block.type === 'image')
-      return <img key={index} className="research-image" src={block.src} alt={block.alt} />
+      return (
+        <img
+          key={index}
+          className="research-image"
+          src={block.src}
+          alt={
+            block.alt ||
+            (block.src.includes('safe-autonomy')
+              ? 'Safe autonomy applications: ground vehicle navigation, autonomous driving, and aerial vehicles'
+              : 'Real-time control applications: ground vehicles, aerial vehicles, and legged robots')
+          }
+          loading="lazy"
+        />
+      )
     if (block.type === 'video') return <VideoCard key={index} {...block} />
     return (
       <p key={index}>

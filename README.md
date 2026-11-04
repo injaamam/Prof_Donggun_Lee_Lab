@@ -1,19 +1,20 @@
 # Intelligent Controls Lab
 
-A simple React rebuild of https://sites.google.com/ncsu.edu/icl, using Vite and plain CSS.
+An editorial-style academic website for the Intelligent Controls Lab at NC State University, built with React, Vite, and plain CSS.
 
 ```sh
 npm install
 npm run dev
 ```
 
-Run `npm run build` for a production build and `npm run preview` to preview it.
+`npm run build` produces the production site in `dist/`. `npm run preview` serves the production build locally. Production hosting must serve `index.html` for application routes.
 
-- `src/pages/`: separate Home, Research, Team, Publications, and Join Us pages.
-- `src/components/`: shared navigation, footer, headings, publications, embedded videos, and content rendering.
-- `src/data/source-content.json`: original Research and Join Us text and links, extracted from the source pages without rewriting.
-- `src/data/publications.json`: original publication records and links.
-- `src/styles.css`: basic layouts, typography, and mobile styles.
-- `public/images/`: original lab photos and images.
+- `src/pages/`: Home, Research, Team, Publications, Join Us, and a recovery page.
+- `src/components/`: shared navigation, footer, editorial headings, custom trajectory illustration, publication entries, and click-to-load videos.
+- `src/data/source-content.json`: research and recruitment source text and links.
+- `src/data/publications.json`: publication records and links, used by the searchable, year-filtered archive.
+- `src/styles.css`: responsive visual system, interactions, and reduced-motion support.
+- `public/images/`: original lab portraits, research figures, and experiment stills.
+- `DESIGN.md`: visual direction, typography, palette, layout, and page structure.
 
-Content was copied from the original site on November 4, 2026. Production hosting should serve `index.html` for application routes; Vite handles this during development and preview.
+Source content was copied from https://sites.google.com/ncsu.edu/icl on November 4, 2026. The redesign retains the source data. Google Fonts supplies Instrument Serif, DM Sans, and DM Mono, with local fallbacks. Video players connect to YouTube's privacy-enhanced domain only after the visitor chooses to play.
