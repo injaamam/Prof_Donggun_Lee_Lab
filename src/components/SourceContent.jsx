@@ -73,8 +73,8 @@ export default function SourceContent({ blocks }) {
       (block.src.includes('safe-autonomy') || block.src.includes('realtime-control'))
     ) {
       const applications = block.src.includes('safe-autonomy')
-        ? ['Ground vehicle navigation', 'Autonomous driving', 'Aerial vehicles']
-        : ['Ground vehicles', 'Aerial vehicles', 'Legged robots']
+        ? ['Ground Vehicle Navigation', 'Autonomous Driving', 'Aerial Vehicles']
+        : ['Ground Vehicles', 'Aerial Vehicles', 'Legged Robots']
       return (
         <div className="application-types" key={index}>
           <span className="eyebrow">APPLICATIONS</span>

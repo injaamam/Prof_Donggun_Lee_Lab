@@ -6,6 +6,8 @@ The first screen must identify the lab, its university, research focus, principa
 
 Keep summaries short and provide the technical detail below them. Visitors should be able to identify relevant research areas, find papers, identify lab members, and locate application requirements without interpreting decorative copy.
 
+The research page is an exception to copy editing: preserve the main Google Site's original wording, headings, topics, and content order. Improve its presentation through typography, spacing, responsive columns, and section navigation.
+
 ## Visual system
 
 - Display: Instrument Serif for factual page and section titles. Avoid italic slogan treatments.
@@ -19,7 +21,7 @@ Keep summaries short and provide the technical detail below them. Visitors shoul
 ## Page structure
 
 1. Home: lab name and research focus; PI, affiliation, methods, applications, and recruitment notice; two research areas; recent publications; robot experiments; Ph.D. recruitment and postdoctoral inquiries. A factual overview replaces the large decorative trajectory diagram.
-2. Research: two-area summary and chapter links; each area uses a short goal, summary, methods, paired foundational/applied research, application tags, expandable key papers, and demonstrations. Full publication records remain available within the paper lists.
+2. Research: original introduction and research goals; two-area chapter links; original descriptions and paired foundational/applied research; videos followed by visible key papers. Preserve source titles, short venue labels, and resource links without adding publication-archive metadata.
 3. Team: PI and affiliation in the introduction; investigator profile and education; Ph.D. students; alumni; opportunity link.
 4. Publications: direct page title; scope and search instructions; searchable and year-filtered records with authors, venues, PDFs, and video links.
 5. Join Us: current recruitment scope; Ph.D. application instructions and required materials; postdoctoral inquiry instructions and required materials.
@@ -27,6 +29,6 @@ Keep summaries short and provide the technical detail below them. Visitors shoul
 
 ## Content and implementation
 
-Publication records retain their source titles, authors, venues, and links. Research explanations were edited for direct technical language. Recruiting details and application requirements come from the supplied site content. Do not invent achievements, funding, research results, or vacancies.
+Publication records retain their source titles, authors, venues, and links. Research explanations retain the main site's original wording. Recruiting details and application requirements come from the supplied site content. Do not invent achievements, funding, research results, or vacancies.
 
 Videos load YouTube's privacy-enhanced player only on activation. Fonts load with swap and have local fallbacks. No new runtime dependencies were introduced. Existing React/Vite routes are preserved.

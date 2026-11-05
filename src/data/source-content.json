@@ -48,7 +48,7 @@
     {
       "type": "paragraph",
       "content": [
-        "We combine data-driven methods with Hamilton–Jacobi (HJ) reachability and control barrier functions (CBFs) to study provable safety for autonomous robots. Our work addresses the computational cost of high-dimensional systems and the limitations of safety methods that require accurate dynamic models."
+        "Classical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe."
       ]
     },
     {
@@ -61,16 +61,16 @@
       "type": "list",
       "items": [
         [
-          "Safety guarantees for learned controllers. ",
-          "We study conditions under which neural networks and reinforcement learning methods satisfy the safety guarantees of HJ reachability and CBFs."
+          "Learning meets formal safety.",
+          " We study when and how data-driven methods — neural networks, reinforcement learning — can inherit the provable safety guarantees of classical tools like HJ reachability and CBFs."
         ],
         [
-          "Connections between CBFs and reachability. ",
-          "We study the relationship between these frameworks to develop principled methods for constructing control barrier functions."
+          "The CBF–Reachability connection.",
+          " These two frameworks are more deeply related than they appear. We work to unify them, enabling general-purpose CBF construction methods that are both principled and practical."
         ],
         [
-          "Least-conservative safety filters. ",
-          "We seek safety conditions that preserve the widest possible set of control actions while maintaining formal safety guarantees."
+          "Least-conservative safety filters.",
+          " Safety shouldn't mean \"barely moves.\" We search for the least restrictive safety conditions that still guarantee nothing goes wrong — so performance and safety coexist."
         ]
       ]
     },
@@ -85,8 +85,8 @@
       "type": "list",
       "items": [
         [
-          "Safe navigation under uncertainty. ",
-          "We develop and test safe autonomy methods for incomplete sensing, unknown environments, and semantic constraints on physical robots."
+          "Safe navigation under real-world uncertainty. ",
+          "We develop safe autonomy methods that work even with incomplete sensing, unknown environments, and semantic constraints — not just in simulation, but on real hardware."
         ]
       ]
     },
@@ -100,7 +100,7 @@
       "items": [
         [
           "Conditions for learned safety guarantees. ",
-          "We establish theoretical conditions under which learned safety methods provide provable guarantees."
+          "We establish theoretical conditions under which learned safety methods provably hold — making deployed systems more than just \"probably safe.\""
         ]
       ]
     },
@@ -245,7 +245,7 @@
     {
       "type": "paragraph",
       "content": [
-        "We develop real-time controllers that update their decisions as new sensor information becomes available. Our research addresses computational limits, disturbances, and model uncertainty through efficient optimal control solvers, robust model predictive control, and receding horizon planning. Faster computation supports longer planning horizons within a fixed time budget."
+        "Unlike offline planners, real-time controllers adapt the moment new information arrives — reacting to an unexpected obstacle, a sudden gust of wind, or a model that was never quite right. But computational efficiency is more than just keeping up with the world — it means seeing further into it. Within the same time budget, a more efficient algorithm can plan over a longer horizon, anticipate consequences earlier, and ultimately make smarter decisions. The challenge is achieving all of this on hardware with strict computational limits. We build control systems that are efficient enough to be deployed, and capable enough to plan ahead — turning computational efficiency into strategic advantage."
       ]
     },
     {
@@ -258,16 +258,16 @@
       "type": "list",
       "items": [
         [
-          "Efficient optimal control solvers. ",
-          "We use Hopf–Lax theory to develop numerical methods for computing optimal control solutions in real time."
+          "Making optimal control computationally tractable. ",
+          "Classical optimal control is powerful but slow. We develop numerically efficient solvers — grounded in Hopf-Lax theory — that turn previously intractable problems into real-time computations. Think: optimal decisions in milliseconds instead of minutes."
         ],
         [
           "Convexification of nonlinear control problems. ",
-          "We investigate reformulations of nonlinear optimal control problems as convex problems to improve computational tractability."
+          "Many control problems are nonlinear and hard. We reformulate them in convex form, unlocking dramatically faster solvers without sacrificing solution quality."
         ],
         [
-          "Optimal control formulations of robust control. ",
-          "We study conditions under which robust control problems can be recast as optimal control problems and solved using efficient numerical methods."
+          "Reformulating robust control as optimal control.",
+          " Robust control problems are notoriously hard to solve directly. We show that under the right formulation, they can be recast as optimal control problems — unlocking the full power of efficient optimal control solvers and enabling real-time robust decision-making that was previously out of reach."
         ]
       ]
     },
@@ -281,8 +281,8 @@
       "type": "list",
       "items": [
         [
-          "Robust sampling-based control. ",
-          "We develop Model Predictive Path Integral (MPPI) methods that evaluate candidate trajectories in parallel on GPUs and compute control actions under disturbances."
+          "Sampling-based control: fast, flexible, and robust. ",
+          "Methods like MPPI (Model Predictive Path Integral) explore many possible futures in parallel — on modern GPUs — to find control actions that are both optimal and robust to disturbances. No assumptions about the world being clean or predictable."
         ]
       ]
     },
@@ -296,7 +296,7 @@
       "items": [
         [
           "Real-time receding horizon planning. ",
-          "We develop controllers that repeatedly solve a finite-horizon planning problem and update the plan as the environment or available information changes."
+          "We build systems that continuously re-plan over a rolling time horizon — combining the foresight of optimal control with the responsiveness of real-time computation. When the environment changes faster than any pre-computed plan can account for, the system adapts on the fly."
         ]
       ]
     },

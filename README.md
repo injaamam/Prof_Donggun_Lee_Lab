@@ -11,7 +11,7 @@ npm run dev
 
 - `src/pages/`: Home, Research, Team, Publications, Join Us, and a recovery page.
 - `src/components/`: shared navigation, footer, direct page headings, factual lab overview, publication entries, and click-to-load videos.
-- `src/data/source-content.json`: research explanations, recruitment requirements, and source links. Research copy has been edited for direct technical language.
+- `src/data/source-content.json`: original research explanations, recruitment requirements, and source links. The research page preserves the main site's wording with updated presentation.
 - `src/data/publications.json`: publication records and links, used by the searchable, year-filtered archive.
 - `src/styles.css`: responsive visual system, interactions, and reduced-motion support.
 - `public/images/`: lab portraits, research figures, and experiment stills.
