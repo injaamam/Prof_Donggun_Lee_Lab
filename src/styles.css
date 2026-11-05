@@ -1828,6 +1828,24 @@ h2 {
   font-size: clamp(36px, 3.8vw, 50px);
   line-height: 1.12;
   max-width: 720px;
+  text-wrap: balance;
+}
+.home-page .section-intro .small-note {
+  margin: 12px 0 0;
+  max-width: 60ch;
+}
+.home-page .research-feature {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.home-page .research-visual {
+  flex-shrink: 0;
+}
+.home-page .research-feature > .eyebrow {
+  margin-top: auto;
+  font-size: 10px;
+  letter-spacing: 0.06em;
 }
 .home-page .research-feature-title h3 {
   font-size: clamp(25px, 2.5vw, 32px);
@@ -1851,6 +1869,8 @@ h2 {
     padding: 36px 0 40px;
   }
   .home-page .section-top {
+    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 28px;
     gap: 16px;
   }
@@ -1860,6 +1880,13 @@ h2 {
   .home-page .selected-work {
     padding-inline: 20px;
     margin-bottom: 40px;
+  }
+  .home-page .selected-paper {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .home-page .selected-paper > .eyebrow {
+    padding-top: 0;
   }
   .home-page .join-banner {
     padding: 28px 22px;

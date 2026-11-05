@@ -17,9 +17,9 @@ export default function Home() {
             <br />
             Controls Lab
           </h1>
-          <h2 className="research-statement">
+          <p className="research-statement">
             Safe autonomy and real-time control for mobile robots.
-          </h2>
+          </p>
           <p className="hero-description">
             We develop fundamental theories, design efficient numerical
             algorithms, and test our ideas in the real world to control dynamic
@@ -46,7 +46,7 @@ export default function Home() {
             <div>
               <dt>Principal investigator</dt>
               <dd>
-                <a href="/team">Dr. Donggun Lee ↗</a>
+                <a href="https://mae.ncsu.edu/people/dlee48/">Dr. Donggun Lee ↗</a>
                 <span>Assistant Professor</span>
               </dd>
             </div>
@@ -152,10 +152,12 @@ export default function Home() {
       </section>
       <section className="section-block">
         <div className="section-top">
-          <h2>Robot experiments & control demonstrations</h2>
-          <span className="small-note">
-            Navigation, safety filtering, and robust control.
-          </span>
+          <div className="section-intro">
+            <h2>Robot experiments & control demonstrations</h2>
+            <p className="small-note">
+              Navigation, safety filtering, and robust control.
+            </p>
+          </div>
         </div>
         <div className="video-grid">
           {content.homeVideos.map((video) => (
