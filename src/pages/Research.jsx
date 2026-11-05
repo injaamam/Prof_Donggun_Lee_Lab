@@ -34,7 +34,7 @@ const areas = [
   },
 ]
 
-function ResearchArea({ area, index }) {
+function ResearchArea({ area }) {
   const { blocks } = area
   const foundational = blocks.findIndex(
     (block) => block.type === 'label' && block.content.join('') === 'FOUNDATIONAL RESEARCH',
@@ -44,19 +44,21 @@ function ResearchArea({ area, index }) {
   )
   const videoStart = blocks.findIndex((block) => block.type === 'video') - 1
   const videos = blocks.filter((block) => block.type === 'video')
+  const [title, , subtitle] = blocks[0].content
+  const description = blocks.slice(1, foundational).flatMap((block) => {
+    if (block.type !== 'paragraph') return [block]
+    return block.content[0]
+      .split(/ (?=We bridge this gap|The challenge is achieving)/)
+      .map((paragraph) => ({ type: 'paragraph', content: [paragraph] }))
+  })
   return (
-    <section className="research-chapter section-grid" id={area.id} aria-label={area.title}>
-      <aside className="section-marker">
-        <span className="eyebrow">0{index + 1} / RESEARCH AREA</span>
-        <nav className="research-section-nav" aria-label={`${area.title} sections`}>
-          <a href={`#${area.id}-foundations`}>Foundational research</a>
-          <a href={`#${area.id}-applied`}>Applied research</a>
-          <a href={`#${area.id}-videos`}>Videos</a>
-          <a href={`#${area.id}-papers`}>Key papers</a>
-        </nav>
-      </aside>
+    <section className="research-chapter" id={area.id} aria-labelledby={`${area.id}-title`}>
       <div className="document research-page">
-        <SourceContent blocks={blocks.slice(0, foundational)} />
+        <h2 id={`${area.id}-title`}>
+          {title}
+          <span className="research-subtitle">{subtitle}</span>
+        </h2>
+        <SourceContent blocks={description} />
         <div className="research-focus-grid">
           <section id={`${area.id}-foundations`} aria-labelledby={`${area.id}-foundations-title`}>
             <h3 id={`${area.id}-foundations-title`}>FOUNDATIONAL RESEARCH</h3>
@@ -125,16 +127,9 @@ export default function Research() {
         </ul>
         <SourceContent blocks={research.slice(3, 5)} />
       </header>
-      <nav className="chapter-nav research-area-nav" aria-label="Research areas">
-        {areas.map((area, index) => (
-          <a href={`#${area.id}`} key={area.id}>
-            <span>0{index + 1}</span>
-            <strong>{area.title} ↘</strong>
-          </a>
-        ))}
-      </nav>
-      {areas.map((area, index) => (
-        <ResearchArea key={area.id} area={area} index={index} />
+      <p className="eyebrow research-area-label">RESEARCH AREA</p>
+      {areas.map((area) => (
+        <ResearchArea key={area.id} area={area} />
       ))}
     </div>
   )

@@ -6,7 +6,7 @@ The first screen must identify the lab, its university, research focus, principa
 
 Keep summaries short and provide the technical detail below them. Visitors should be able to identify relevant research areas, find papers, identify lab members, and locate application requirements without interpreting decorative copy.
 
-The research page is an exception to copy editing: preserve the main Google Site's original wording, headings, topics, and content order. Improve its presentation through typography, spacing, responsive columns, and section navigation.
+The research page is an exception to copy editing: preserve the main Google Site's original wording, headings, topics, content order, and layout structure. Improve its presentation through typography, spacing, and responsive columns. Keep the main site's direct reading flow without chapter navigation or sidebar navigation.
 
 ## Visual system
 
@@ -21,7 +21,7 @@ The research page is an exception to copy editing: preserve the main Google Site
 ## Page structure
 
 1. Home: lab name and research focus; PI, affiliation, methods, applications, and recruitment notice; two research areas; recent publications; robot experiments; Ph.D. recruitment and postdoctoral inquiries. A factual overview replaces the large decorative trajectory diagram.
-2. Research: original introduction and research goals; two-area chapter links; original descriptions and paired foundational/applied research; videos followed by visible key papers. Preserve source titles, short venue labels, and resource links without adding publication-archive metadata.
+2. Research: original introduction and research goals; original research-area headings and descriptions; paired foundational/applied research; videos followed by visible key papers. Use the full content width without a sidebar or chapter links. Preserve source titles, short venue labels, and resource links without adding publication-archive metadata.
 3. Team: PI and affiliation in the introduction; investigator profile and education; Ph.D. students; alumni; opportunity link.
 4. Publications: direct page title; scope and search instructions; searchable and year-filtered records with authors, venues, PDFs, and video links.
 5. Join Us: current recruitment scope; Ph.D. application instructions and required materials; postdoctoral inquiry instructions and required materials.
