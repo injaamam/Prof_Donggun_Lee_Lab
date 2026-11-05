@@ -19,7 +19,7 @@ Keep summaries short and provide the technical detail below them. Visitors shoul
 ## Page structure
 
 1. Home: lab name and research focus; PI, affiliation, methods, applications, and recruitment notice; two research areas; recent publications; robot experiments; Ph.D. recruitment and postdoctoral inquiries. A factual overview replaces the large decorative trajectory diagram.
-2. Research: two-area summary; chapter links; methods and applications; safe autonomy research; real-time control research. Bold topic labels, experimental videos, and full publication records support scanning and detailed reading.
+2. Research: two-area summary and chapter links; each area uses a short goal, summary, methods, paired foundational/applied research, application tags, expandable key papers, and demonstrations. Full publication records remain available within the paper lists.
 3. Team: PI and affiliation in the introduction; investigator profile and education; Ph.D. students; alumni; opportunity link.
 4. Publications: direct page title; scope and search instructions; searchable and year-filtered records with authors, venues, PDFs, and video links.
 5. Join Us: current recruitment scope; Ph.D. application instructions and required materials; postdoctoral inquiry instructions and required materials.
