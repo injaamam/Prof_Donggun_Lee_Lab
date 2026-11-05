@@ -197,9 +197,9 @@ export default function Home() {
         </div>
         <div>
           <p>
-            We are recruiting 2–3 Ph.D. students in control, robotics,
-            optimization, and learning. Prospective candidates can contact Prof.
-            Lee about research opportunities.
+            We are recruiting 2–3 Ph.D. students and welcome inquiries from
+            prospective postdoctoral researchers with interests aligned with our
+            research areas.
           </p>
           <a className="button button-light" href="/join-us">
             Application instructions <span>↗</span>

@@ -8,9 +8,9 @@ export default function JoinUs() {
   return (
     <>
       <PageHeading
-        title="Open positions"
+        title="Join Us"
         label="PH.D. STUDENTS & POSTDOCTORAL RESEARCHERS"
-        description="We are recruiting 2–3 Ph.D. students and welcome postdoctoral inquiries in control theory, robotics, optimization, and learning. Application instructions and required materials are listed below."
+        description="We are recruiting 2–3 Ph.D. students and welcome inquiries from prospective postdoctoral researchers with interests aligned with our research areas. Application instructions and requested materials are listed below."
       />
       <div className="opportunity-note">
         <span className="red-square" />
@@ -33,8 +33,7 @@ export default function JoinUs() {
         <aside className="section-marker">
           <span className="eyebrow">02 / POSTDOCTORAL RESEARCH</span>
           <p>
-            Email Prof. Lee with your CV, proposed research direction, and representative
-            publications.
+            Contact Prof. Lee directly by email. Include the information listed below.
           </p>
         </aside>
         <div className="document join-page">
