@@ -34,7 +34,7 @@ const areas = [
   },
 ]
 
-function ResearchArea({ area }) {
+function ResearchArea({ area, index }) {
   const { blocks } = area
   const foundational = blocks.findIndex(
     (block) => block.type === 'label' && block.content.join('') === 'FOUNDATIONAL RESEARCH',
@@ -54,11 +54,20 @@ function ResearchArea({ area }) {
   return (
     <section className="research-chapter" id={area.id} aria-labelledby={`${area.id}-title`}>
       <div className="document research-page">
-        <h2 id={`${area.id}-title`}>
-          {title}
-          <span className="research-subtitle">{subtitle}</span>
-        </h2>
-        <SourceContent blocks={description} />
+        <header className="research-chapter-heading">
+          <div className="research-chapter-title">
+            <span className="research-chapter-number" aria-hidden="true">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <h2 id={`${area.id}-title`}>
+              {title}
+              <span className="research-subtitle">{subtitle}</span>
+            </h2>
+          </div>
+          <div className="research-chapter-description">
+            <SourceContent blocks={description} />
+          </div>
+        </header>
         <div className="research-focus-grid">
           <section id={`${area.id}-foundations`} aria-labelledby={`${area.id}-foundations-title`}>
             <h3 id={`${area.id}-foundations-title`}>FOUNDATIONAL RESEARCH</h3>
@@ -125,11 +134,13 @@ export default function Research() {
             ),
           )}
         </ul>
-        <SourceContent blocks={research.slice(3, 5)} />
+        <div className="research-intro-copy">
+          <SourceContent blocks={research.slice(3, 5)} />
+        </div>
       </header>
       <p className="eyebrow research-area-label">RESEARCH AREA</p>
-      {areas.map((area) => (
-        <ResearchArea key={area.id} area={area} />
+      {areas.map((area, index) => (
+        <ResearchArea key={area.id} area={area} index={index} />
       ))}
     </div>
   )
