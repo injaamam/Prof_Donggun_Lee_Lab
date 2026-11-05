@@ -5,7 +5,7 @@ import publications from "../data/publications.json";
 
 export default function Home() {
   return (
-    <>
+    <div className="home-page">
       <section className="home-hero informative-hero">
         <div className="hero-copy">
           <p className="eyebrow">
@@ -181,6 +181,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-    </>
+    </div>
   );
 }
