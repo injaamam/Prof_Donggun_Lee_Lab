@@ -94,9 +94,9 @@ export default function Home() {
               <span>↗</span>
             </div>
             <p>
-              We combine Hamilton–Jacobi reachability, control barrier functions, and learning to
-              establish safety guarantees for robots with uncertain dynamics or incomplete
-              information.
+              We study when learning-based methods can provide provable safety guarantees using
+              Hamilton–Jacobi reachability and control barrier functions, including under model
+              uncertainty and incomplete sensing.
             </p>
             <span className="eyebrow">REACHABILITY · LEARNING · FORMAL SAFETY</span>
           </a>

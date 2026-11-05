@@ -1,0 +1,37 @@
+Original Google Sites content archived November 4, 2026. Whitespace normalized; image labels may not be included.
+
+We make mobile robots more intelligent.
+
+We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information. Our techniques bridge optimal control, reinforcement learning, machine learning, and mathematical optimization. Our work spans the full spectrum — from fundamental mathematical theory to robots operating in the real world.
+
+RESEARCH AREA
+
+Data-Driven Safe Autonomy & Theoretical Guarantees Classical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe.
+
+FOUNDATIONAL RESEARCH Learning meets formal safety. We study when and how data-driven methods — neural networks, reinforcement learning — can inherit the provable safety guarantees of classical tools like HJ reachability and CBFs. The CBF–Reachability connection. These two frameworks are more deeply related than they appear. We work to unify them, enabling general-purpose CBF construction methods that are both principled and practical. Least-conservative safety filters. Safety shouldn't mean "barely moves." We search for the least restrictive safety conditions that still guarantee nothing goes wrong — so performance and safety coexist.
+
+APPLIED RESEARCH Safe navigation under real-world uncertainty. We develop safe autonomy methods that work even with incomplete sensing, unknown environments, and semantic constraints — not just in simulation, but on real hardware.
+
+Conditions for learned safety guarantees. We establish theoretical conditions under which learned safety methods provably hold — making deployed systems more than just "probably safe."
+
+VIDEOS
+
+VIDEOS
+
+KEY PAPERS Adaptive Reachability Safety (AReS) Filter for Systems with Unknown Dynamic Models Under Review VIDEO Least Conservative Robust Safety Filter via Hamilton-Jacobi Reachability Analysis Under Review VIDEO Certifiable Reachability Learning Using a New Lipschitz Continuous Value Function RA-L PDF VIDEO Robust Control Barrier-Value Functions for Safety-Critical Control CDC PDF Deep Reinforcement Learning for Reach-Avoid-Stay Problems ICRA PDF
+
+Real-Time Control Schemes Robustness & Adaptability Unlike offline planners, real-time controllers adapt the moment new information arrives — reacting to an unexpected obstacle, a sudden gust of wind, or a model that was never quite right. But computational efficiency is more than just keeping up with the world — it means seeing further into it. Within the same time budget, a more efficient algorithm can plan over a longer horizon, anticipate consequences earlier, and ultimately make smarter decisions. The challenge is achieving all of this on hardware with strict computational limits. We build control systems that are efficient enough to be deployed, and capable enough to plan ahead — turning computational efficiency into strategic advantage.
+
+FOUNDATIONAL RESEARCH Making optimal control computationally tractable. Classical optimal control is powerful but slow. We develop numerically efficient solvers — grounded in Hopf-Lax theory — that turn previously intractable problems into real-time computations. Think: optimal decisions in milliseconds instead of minutes. Convexification of nonlinear control problems. Many control problems are nonlinear and hard. We reformulate them in convex form, unlocking dramatically faster solvers without sacrificing solution quality. Reformulating robust control as optimal control. Robust control problems are notoriously hard to solve directly. We show that under the right formulation, they can be recast as optimal control problems — unlocking the full power of efficient optimal control solvers and enabling real-time robust decision-making that was previously out of reach.
+
+APPLIED RESEARCH Sampling-based control: fast, flexible, and robust. Methods like MPPI (Model Predictive Path Integral) explore many possible futures in parallel — on modern GPUs — to find control actions that are both optimal and robust to disturbances. No assumptions about the world being clean or predictable.
+
+Real-time receding horizon planning. We build systems that continuously re-plan over a rolling time horizon — combining the foresight of optimal control with the responsiveness of real-time computation. When the environment changes faster than any pre-computed plan can account for, the system adapts on the fly.
+
+VIDEOS
+
+VIDEOS
+
+KEY PAPERS ZSG-MPPI: Robust Model-Predictive Path-Integral Method for Disturbance Handling RA-L PDF VIDEO Real-time Robust Receding Horizon Planning using Hamilton-Jacobi Reachability Analysis TRO PDF VIDEO Efficient Computation of State-Constrained Reachability Problems Using Hopf-Lax Formulae TAC PDF Convexifying State-Constrained Optimal Control Problems TAC PDF Hopf–Lax-MPC: Generalized Hopf–Lax Formula-based Model Predictive Control for Long-Horizon Real-Time Applications Under Review
+
+@ 2026 Intelligent Controls Lab, North Carolina State University. All rights reserved.

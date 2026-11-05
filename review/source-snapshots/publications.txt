@@ -1,0 +1,73 @@
+Original Google Sites content archived November 4, 2026. Whitespace normalized; image labels may not be included.
+
+Publications
+
+Under Review
+
+A Forward Reachability Perspective on Robust Control Invariance and Discount Factors in Reachability Analysis J. J. Choi*, D. Lee*, B. Li, J. P. How, K. Sreenath, S. L. Herbert, and C. J. Tomlin *equally contributed PDF
+
+Adaptive Reachability Safety (AReS) Filter for Systems with Unknown Dynamic Models G. Chenevert, X. Zhang, J. Li, A. Kannan, F. M. Tariq, J. D’sa, D. Isele, S. Bae, and D. Lee VIDEO
+
+Hopf–Lax-MPC: Generalized Hopf–Lax Formula-based Model Predictive Control for Long-Horizon Real-Time Applications X. Zhang, B. Bialy, and D. Lee
+
+A Hamilton–Jacobi Reachability Framework with Soft Constraints for Safety-Critical Systems C. E. Mballo, D. Lee, and C. J. Tomlin PDF
+
+Characterization and Analysis of Emergency Landing Flight Envelopes with Graded Safety Specifications C. E. Mballo, B. L. Ferguson, Inkyu Jang, D. Lee, and C. J. Tomlin PDF
+
+Extending and Unifying the Fundamental Tasks of Hamilton-Jacobi Reachability Analysis D. Hirsch, W. Sharpless, D. Lee, and S. Herbert PDF
+
+2026
+
+Least Conservative Robust Safety Filter via Hamilton-Jacobi Reachability Analysis X. Zhang, Y. Su, G. Chenevert, F. M. Tariq, J. D’sa, D. Isele, S. Bae, and D. Lee IEEE Robotics and Automation Letters, Accepted. VIDEO
+
+On the Hamilton-Jacobi Reachability of Systems with Input Delay S. Oh, D. Lee, H. E. Tseng, G. Pandey, and G. Orosz IEEE Transactions on Automatic Control, A ccepted
+
+Deep Reinforcement Learning for Reach-Avoid-Stay Problems G. Chenevert, J. Li, S. Bae, and D. Lee IEEE International Conference on Robotics and Automation (ICRA), 2026 PDF
+
+Time-Series Data-Driven Three Dimensional Shape Control of Deformable Linear Objects Using a Dual-Arm Robot with Dynamic Model Updating J. Choi, M. H. Gebrezgihier, D. Lee, and A. Hong IEEE Robotics and Automation Letters PDF VIDEO
+
+2025
+
+ZSG-MPPI: Robust Model-Predictive Path-Integral Method for Disturbance Handling X. Zhang, G. Chenevert, Y. Su, F. M. Tariq, J. D’sa, S. Bae, and D. Lee IEEE Robotics and Automation Letters PDF VIDEO
+
+Certifiable Reachability Learning Using a New Lipschitz Continuous Value Function J. Li, D. Lee, J. Lee, K. S. Dong, S. Sojoudi, and C. J. Tomlin IEEE Robotics and Automation Letters PDF VIDEO
+
+2023
+
+Efficient Computation of State-Constrained Reachability Problems Using Hopf-Lax Formulae D. Lee and C. J. Tomlin IEEE Transactions on Automatic Control PDF
+
+Interaction-Aware Trajectory Planning for Autonomous Vehicles with Analytic Integration of Neural Networks into Model Predictive Control P. Gupta, D. Isele, D. Lee, and S. Bae IEEE International Conference on Robotics and Automation (ICRA), 2023 PDF VIDEO
+
+RAMP: A Risk-Aware Mapping and Planning Pipeline for Fast Off-Road Ground Robot Navigation L. Sharma, M. Everett, D. Lee, X. Cai, P. Osteen, and J. P. How IEEE International Conference on Robotics and Automation (ICRA), 2023 PDF VIDEO
+
+2022
+
+Convexifying State-Constrained Optimal Control Problems D. Lee, S. Deka, and C. J. Tomlin IEEE Transactions on Automatic Control PDF
+
+Real-time Robust Receding Horizon Planning using Hamilton-Jacobi Reachability Analysis H. Seo, D. Lee, C. Y. Son, I. Jang, C. J. Tomlin, and H. J. Kim IEEE Transactions on Robotics PDF VIDEO
+
+2021
+
+Towards Cyber-Physical Systems Robust to Communication Delays: A Differential Game Approach S. A. Deka, D. Lee, and C. J. Tomlin IEEE Control Systems Letters (L-CSS) PDF
+
+Robust Control Barrier-Value Functions for Safety-Critical Control J. J. Choi, D. Lee, K. Sreenath, C. J. Tomlin, and S. L. Herbert IEEE Conference on Decision and Control (CDC) PDF
+
+2020
+
+A Hopf-Lax Formula in Hamilton-Jacobi Analysis for Reach-Avoid Problems D. Lee and C. J. Tomlin IEEE Control Systems Letters (L-CSS) PDF
+
+The Optimal Control of Battery Fast Charging Based-on Pontryagin’s Minimum Principle S. Park, D. Lee, H. J. Ahn, C. J. Tomlin, and S. Moura IEEE Conference on Decision and Control (CDC) PDF
+
+Hamilton-Jacobi Equation for Optimal Control Problems and Zero-Sum Game Problems with State Constraints D. Lee, A. Keimer, A. M. Bayen, and C. J. Tomlin IEEE Conference on Decision and Control (CDC) PDF
+
+2019
+
+Robust Trajectory Planning for a Multirotor against Disturbance based on Hamilton-Jacobi Reachability Analysis H. Seo, D. Lee, C. Y. Son, C. J. Tomlin, and H. J. Kim IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) PDF VIDEO
+
+Iterative Method using the Generalized Hopf Formula: Avoiding Spatial Discretization for Computing Solutions of Hamilton-Jacobi Equations for Nonlinear Systems D. Lee and C. J. Tomlin IEEE Conference on Decision and Control (CDC) PDF
+
+Removing Leaking Corners to Reduce Dimensionality in Hamilton-Jacobi Reachability D. Lee*, M. Chen*, and C. J. Tomlin *equally contributed IEEE International Conference on Robotics and Automation (ICRA) PDF
+
+A Risk-Sensitive Finite-Time Reachability Approach for Safety of Stochastic Dynamic Systems M. P. Chapman, J. Lacotte, A. Tamar, D. Lee, K. M. Smith, V. Cheng, J. F. Fisac, S. Jha, M. Pavone, and C. J. Tomlin American Control Conference (ACC) PDF
+
+@ 2026 Intelligent Controls Lab, North Carolina State University. All rights reserved.

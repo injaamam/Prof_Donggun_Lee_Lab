@@ -1,0 +1,326 @@
+[
+  {
+    "section": "Homepage",
+    "label": "Main research statement",
+    "current": "Safe autonomy and real-time control for mobile robots.",
+    "raw": "We make mobile robots more intelligent.\n\nData-Driven Safe Autonomy & Theoretical Guarantees\n\nReal-Time Control Schemes Robustness & Adaptability",
+    "note": "Combines three original headings. This is my summary, not a direct quotation. It narrows the homepage emphasis to the two research areas.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Introductory paragraph",
+    "current": "We develop control theory and algorithms that help robots navigate safely and respond to disturbances, uncertain models, and incomplete sensor information.",
+    "raw": "We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information. Our techniques bridge optimal control, reinforcement learning, machine learning, and mathematical optimization.\n\nSafe navigation under real-world uncertainty. We develop safe autonomy methods that work even with incomplete sensing, unknown environments, and semantic constraints — not just in simulation, but on real hardware.\n\nUnlike offline planners, real-time controllers adapt the moment new information arrives — reacting to an unexpected obstacle, a sudden gust of wind, or a model that was never quite right. But computational efficiency is more than just keeping up with the world — it means seeing further into it. Within the same time budget, a more efficient algorithm can plan over a longer horizon, anticipate consequences earlier, and ultimately make smarter decisions. The challenge is achieving all of this on hardware with strict computational limits. We build control systems that are efficient enough to be deployed, and capable enough to plan ahead — turning computational efficiency into strategic advantage.",
+    "note": "Combines the research introduction, safe-navigation work, and real-time-control description. “Incomplete sensor information” interprets “incomplete sensing.”",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "PI and affiliation",
+    "current": "Principal investigator: Dr. Donggun Lee. Assistant Professor. Department: Mechanical and Aerospace Engineering. NC State University.",
+    "raw": "Dr. Donggun Lee Principal Investigator Assistant Professor, Mechanical and Aerospace Engineering, North Carolina State University",
+    "note": "Information copied from the Team page and moved to the homepage. Department designation is inferred from the stated affiliation.",
+    "source": "Team",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Location",
+    "current": "NC State University · Raleigh, NC",
+    "raw": "No explicit “Raleigh, NC” statement was located in the archived Home, Research, Team, Join Us, or Publications text.",
+    "note": "Added geographic context, not a quotation or a fact established by these archived pages. My earlier explanation should have distinguished this. Remove it or verify it against an institutional address.",
+    "source": "No archived textual support",
+    "flag": true
+  },
+  {
+    "section": "Homepage",
+    "label": "Methods",
+    "current": "Optimal control, Hamilton–Jacobi reachability, reinforcement learning, and mathematical optimization",
+    "raw": "We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information. Our techniques bridge optimal control, reinforcement learning, machine learning, and mathematical optimization.\n\nClassical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe.",
+    "note": "Selected from the research introduction and safety section. Machine learning appears in the original introduction but is omitted from this compact list; the list is not exhaustive.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Applications",
+    "current": "Ground vehicle navigation, autonomous driving, aerial vehicles, and legged robots",
+    "raw": "Original safe-autonomy image labels: “Ground Vehicle Navigation”, “Autonomous Driving”, “Aerial Vehicles”.\n\nOriginal real-time-control image labels: “Ground Vehicles”, “Aerial Vehicles”, “Legged Robots”.",
+    "note": "Merged and deduplicated labels from two original figures. These are application areas listed by the original site, not a claim of completed deployments in all four areas.",
+    "source": "Research figures: public/images/safe-autonomy.png and realtime-control.png",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Research-area headings",
+    "current": "Safe autonomy & real-time control; Data-driven safe autonomy; Real-time robust control.",
+    "raw": "Data-Driven Safe Autonomy & Theoretical Guarantees\n\nReal-Time Control Schemes Robustness & Adaptability",
+    "note": "Shortened original headings. “Real-time robust control” combines the second area’s heading and robustness subtitle.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Safe-autonomy summary",
+    "current": "We combine Hamilton–Jacobi reachability, control barrier functions, and learning to establish safety guarantees for robots with uncertain dynamics or incomplete information.",
+    "raw": "Classical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe.\n\nLearning meets formal safety. We study when and how data-driven methods — neural networks, reinforcement learning — can inherit the provable safety guarantees of classical tools like HJ reachability and CBFs.\n\nConditions for learned safety guarantees. We establish theoretical conditions under which learned safety methods provably hold — making deployed systems more than just \"probably safe.\"",
+    "note": "Review carefully: “to establish safety guarantees” compresses research questions and conditional guarantees into a stronger-sounding statement. Safer wording: “We study how learning-based methods can retain formal safety guarantees under model uncertainty and incomplete sensing.”",
+    "source": "Research",
+    "flag": true
+  },
+  {
+    "section": "Homepage",
+    "label": "Real-time-control summary",
+    "current": "We develop efficient optimal control solvers and model predictive control methods for robots that must replan in real time and handle disturbances.",
+    "raw": "Making optimal control computationally tractable. Classical optimal control is powerful but slow. We develop numerically efficient solvers — grounded in Hopf-Lax theory — that turn previously intractable problems into real-time computations. Think: optimal decisions in milliseconds instead of minutes.\n\nSampling-based control: fast, flexible, and robust. Methods like MPPI (Model Predictive Path Integral) explore many possible futures in parallel — on modern GPUs — to find control actions that are both optimal and robust to disturbances. No assumptions about the world being clean or predictable.\n\nReal-time receding horizon planning. We build systems that continuously re-plan over a rolling time horizon — combining the foresight of optimal control with the responsiveness of real-time computation. When the environment changes faster than any pre-computed plan can account for, the system adapts on the fly.",
+    "note": "Combines three research descriptions. Does not preserve all qualifications or methods, such as the Hopf–Lax formulation.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Publication selection",
+    "current": "Recent publications: three entries from 2026.",
+    "raw": "The original Publications page lists Under Review items and year-grouped records. Individual paper titles, authors, venues, and links are retained in src/data/publications.json.",
+    "note": "Homepage selection is my editorial choice: exclude Under Review entries, then take the first three remaining records in source order. “Recent” does not mean a complete list of the latest papers.",
+    "source": "Publications",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Experiment section",
+    "current": "Robot experiments & control demonstrations. Navigation, safety filtering, and robust control.",
+    "raw": "Original embedded video titles:\nOutdoor Navigation with Unexpected Dynamic Objects Using ZSG-MPPI\nAdaptive Reachability Safety (AReS) Filter for Unknown Human Behavior\nLeast-Conservative Safety Filter (LCSF) vs. Baselines: Robust Control Example\nLeast Conservative Safety Filter LCSF and Baselines for a Pursuit–Evasion Game",
+    "note": "New umbrella heading and topic summary for the four original homepage videos. The collection includes control examples; it should not be read as claiming every clip is a physical robot experiment.",
+    "source": "Home video titles",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Recruiting notice",
+    "current": "Recruiting 2–3 Ph.D. students",
+    "raw": "The Intelligent Controls Lab is currently recruiting 2–3 Ph.D. students.",
+    "note": "Near-verbatim statement moved from Join Us to Home. This is the archived site’s availability, not an independent confirmation that the positions remain open.",
+    "source": "Join Us",
+    "flag": false
+  },
+  {
+    "section": "Homepage",
+    "label": "Recruitment summary",
+    "current": "We are recruiting 2–3 Ph.D. students in control, robotics, optimization, and learning. Prospective postdoctoral researchers can contact Prof. Lee about research opportunities.",
+    "raw": "The Intelligent Controls Lab is currently recruiting 2–3 Ph.D. students.\n\nRelevant coursework in areas such as control, robotics, optimization, mathematics, or programming\n\nThe Intelligent Controls Lab welcomes inquiries from prospective postdoctoral researchers with interests aligned with our research areas.\n\nInterested candidates should contact Prof. Donggun Lee directly by email and include the following information:",
+    "note": "The vacancy count and postdoctoral inquiry are explicit. The field list is synthesized from research areas and coursework, not a verbatim list of vacancy specializations. Postdoctoral inquiries do not confirm a funded vacancy.",
+    "source": "Join Us",
+    "flag": true
+  },
+  {
+    "section": "Homepage",
+    "label": "Footer research description",
+    "current": "Control theory, robotics, optimization, and learning.",
+    "raw": "We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information. Our techniques bridge optimal control, reinforcement learning, machine learning, and mathematical optimization.",
+    "note": "New concise topic list derived from the research introduction.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Research introduction",
+    "current": "Our research focuses on two areas: data-driven safe autonomy with theoretical guarantees, and efficient real-time control under disturbances and model uncertainty.",
+    "raw": "Data-Driven Safe Autonomy & Theoretical Guarantees\n\nReal-Time Control Schemes Robustness & Adaptability\n\nUnlike offline planners, real-time controllers adapt the moment new information arrives — reacting to an unexpected obstacle, a sudden gust of wind, or a model that was never quite right. But computational efficiency is more than just keeping up with the world — it means seeing further into it. Within the same time budget, a more efficient algorithm can plan over a longer horizon, anticipate consequences earlier, and ultimately make smarter decisions. The challenge is achieving all of this on hardware with strict computational limits. We build control systems that are efficient enough to be deployed, and capable enough to plan ahead — turning computational efficiency into strategic advantage.",
+    "note": "My summary of the two original areas; model uncertainty is drawn from the original discussion of imperfect models.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Research methods and side labels",
+    "current": "Methods: Optimal control · Hamilton–Jacobi reachability · Control barrier functions · Reinforcement learning · Mathematical optimization.\n\nSafety sidebar: Hamilton–Jacobi reachability, control barrier functions, and safety guarantees.\n\nControl sidebar: Optimal control solvers, model predictive control, and robust planning.",
+    "raw": "We develop the theory, algorithms, and hardware-tested systems that enable autonomous robots to act intelligently — even under uncertainty, resource constraints, and incomplete information. Our techniques bridge optimal control, reinforcement learning, machine learning, and mathematical optimization.\n\nClassical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe.\n\nMaking optimal control computationally tractable. Classical optimal control is powerful but slow. We develop numerically efficient solvers — grounded in Hopf-Lax theory — that turn previously intractable problems into real-time computations. Think: optimal decisions in milliseconds instead of minutes.\n\nSampling-based control: fast, flexible, and robust. Methods like MPPI (Model Predictive Path Integral) explore many possible futures in parallel — on modern GPUs — to find control actions that are both optimal and robust to disturbances. No assumptions about the world being clean or predictable.",
+    "note": "New navigation and scanning summaries of the existing detailed methods. Application list has the same image-label source as the homepage.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Team introduction",
+    "current": "Led by Dr. Donggun Lee, Assistant Professor of Mechanical and Aerospace Engineering at NC State University. Meet our principal investigator, Ph.D. students, and alumni.",
+    "raw": "Dr. Donggun Lee Principal Investigator Assistant Professor, Mechanical and Aerospace Engineering, North Carolina State University\n\nPhD Students\n\nAlumni",
+    "note": "Combines original PI affiliation with original section names. “Led by” paraphrases “Principal Investigator.”",
+    "source": "Team",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Join Us introduction",
+    "current": "We are recruiting 2–3 Ph.D. students and welcome postdoctoral inquiries in control theory, robotics, optimization, and learning. Application instructions and required materials are listed below.",
+    "raw": "The Intelligent Controls Lab is currently recruiting 2–3 Ph.D. students.\n\nThe Intelligent Controls Lab welcomes inquiries from prospective postdoctoral researchers with interests aligned with our research areas.\n\nRelevant coursework in areas such as control, robotics, optimization, mathematics, or programming",
+    "note": "Combines vacancy text, postdoctoral inquiry language, and topic areas. Same field-list interpretation and current-availability limitation as the homepage.",
+    "source": "Join Us",
+    "flag": true
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Graduate application sidebar",
+    "current": "Apply through NC State MAE Graduate Admissions. Indicate Prof. Donggun Lee in your application.",
+    "raw": "Prospective students should apply to the NC State Department of Mechanical and Aerospace Engineering (MAE) graduate program through the official admissions process:\n\nWhen completing your application, please indicate Prof. Donggun Lee as a faculty member you are interested in working with.",
+    "note": "Shortened application summary. The complete requirements remain below it.",
+    "source": "Join Us",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Postdoctoral inquiry sidebar",
+    "current": "Email Prof. Lee with your CV, proposed research direction, and representative publications.",
+    "raw": "Interested candidates should contact Prof. Donggun Lee directly by email and include the following information:\n\nA current CV\nA brief description of your research interests and proposed research direction\nLinks to 2–3 representative publications or your Google Scholar profile",
+    "note": "Selects three requirements from the longer original list. The detailed list also asks for experience and availability.",
+    "source": "Join Us",
+    "flag": false
+  },
+  {
+    "section": "Other page introductions",
+    "label": "Publications introduction",
+    "current": "Browse papers on control theory, robot safety, reachability analysis, optimization, and learning. Filter by year or search by title, author, or venue. PDF and video links are provided where available.",
+    "raw": "Original publication records contain paper titles, author lists, years/statuses, venues, and PDF/video links. The original research sections describe the named topics.",
+    "note": "First sentence is a topic summary. Search/filter instructions describe functionality I implemented; they are new interface text, not source-site quotations.",
+    "source": "Publications + new UI functionality",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "We combine data-driven methods with Hamilton–Jacobi (HJ) reachability and control barrier functions (CBFs) to study provable safety for autonomous robots",
+    "current": "We combine data-driven methods with Hamilton–Jacobi (HJ) reachability and control barrier functions (CBFs) to study provable safety for autonomous robots. Our work addresses the computational cost of high-dimensional systems and the limitations of safety methods that require accurate dynamic models.",
+    "raw": "Classical safety frameworks like Hamilton-Jacobi (HJ) reachability and Control Barrier Functions (CBFs) offer rigorous, provable guarantees — but they hit a wall in practice. The curse of dimensionality makes them computationally intractable for complex robots, and their reliance on perfect models rarely holds in the real world. We bridge this gap by combining data-driven methods with formal safety theory — so that when your robot encounters something it has never seen before, it still knows how to stay safe.",
+    "note": "Replaces the original metaphor with specific computational and modeling limitations. “Study provable safety” retains the research framing.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Safety guarantees for learned controllers",
+    "current": "Safety guarantees for learned controllers. We study conditions under which neural networks and reinforcement learning methods satisfy the safety guarantees of HJ reachability and CBFs.",
+    "raw": "Learning meets formal safety. We study when and how data-driven methods — neural networks, reinforcement learning — can inherit the provable safety guarantees of classical tools like HJ reachability and CBFs.",
+    "note": "Condenses the original question into conditions under which learned controllers satisfy formal guarantees.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Connections between CBFs and reachability",
+    "current": "Connections between CBFs and reachability. We study the relationship between these frameworks to develop principled methods for constructing control barrier functions.",
+    "raw": "The CBF–Reachability connection. These two frameworks are more deeply related than they appear. We work to unify them, enabling general-purpose CBF construction methods that are both principled and practical.",
+    "note": "Paraphrases the stated unification/CBF-construction research. No new result is added.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Least-conservative safety filters",
+    "current": "Least-conservative safety filters. We seek safety conditions that preserve the widest possible set of control actions while maintaining formal safety guarantees.",
+    "raw": "Least-conservative safety filters. Safety shouldn't mean \"barely moves.\" We search for the least restrictive safety conditions that still guarantee nothing goes wrong — so performance and safety coexist.",
+    "note": "“Widest possible set” interprets “least restrictive safety conditions”; check whether this precisely matches the intended mathematical objective.",
+    "source": "Research",
+    "flag": true
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Safe navigation under uncertainty",
+    "current": "Safe navigation under uncertainty. We develop and test safe autonomy methods for incomplete sensing, unknown environments, and semantic constraints on physical robots.",
+    "raw": "Safe navigation under real-world uncertainty. We develop safe autonomy methods that work even with incomplete sensing, unknown environments, and semantic constraints — not just in simulation, but on real hardware.",
+    "note": "Condenses the original statement about incomplete sensing, unknown environments, semantic constraints, and hardware tests.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Conditions for learned safety guarantees",
+    "current": "Conditions for learned safety guarantees. We establish theoretical conditions under which learned safety methods provide provable guarantees.",
+    "raw": "Conditions for learned safety guarantees. We establish theoretical conditions under which learned safety methods provably hold — making deployed systems more than just \"probably safe.\"",
+    "note": "Removes the “probably safe” comparison and retains the claim about theoretical conditions.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "We develop real-time controllers that update their decisions as new sensor information becomes available",
+    "current": "We develop real-time controllers that update their decisions as new sensor information becomes available. Our research addresses computational limits, disturbances, and model uncertainty through efficient optimal control solvers, robust model predictive control, and receding horizon planning. Faster computation supports longer planning horizons within a fixed time budget.",
+    "raw": "Unlike offline planners, real-time controllers adapt the moment new information arrives — reacting to an unexpected obstacle, a sudden gust of wind, or a model that was never quite right. But computational efficiency is more than just keeping up with the world — it means seeing further into it. Within the same time budget, a more efficient algorithm can plan over a longer horizon, anticipate consequences earlier, and ultimately make smarter decisions. The challenge is achieving all of this on hardware with strict computational limits. We build control systems that are efficient enough to be deployed, and capable enough to plan ahead — turning computational efficiency into strategic advantage.",
+    "note": "Summarizes computational limits, disturbances, imperfect models, and planning horizons. Introduces the more explicit “sensor information” wording.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Efficient optimal control solvers",
+    "current": "Efficient optimal control solvers. We use Hopf–Lax theory to develop numerical methods for computing optimal control solutions in real time.",
+    "raw": "Making optimal control computationally tractable. Classical optimal control is powerful but slow. We develop numerically efficient solvers — grounded in Hopf-Lax theory — that turn previously intractable problems into real-time computations. Think: optimal decisions in milliseconds instead of minutes.",
+    "note": "Removes the milliseconds-versus-minutes comparison and retains the Hopf–Lax solver direction.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Convexification of nonlinear control problems",
+    "current": "Convexification of nonlinear control problems. We investigate reformulations of nonlinear optimal control problems as convex problems to improve computational tractability.",
+    "raw": "Convexification of nonlinear control problems. Many control problems are nonlinear and hard. We reformulate them in convex form, unlocking dramatically faster solvers without sacrificing solution quality.",
+    "note": "Uses “investigate reformulations” rather than promising faster solvers without loss of quality.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Optimal control formulations of robust control",
+    "current": "Optimal control formulations of robust control. We study conditions under which robust control problems can be recast as optimal control problems and solved using efficient numerical methods.",
+    "raw": "Reformulating robust control as optimal control. Robust control problems are notoriously hard to solve directly. We show that under the right formulation, they can be recast as optimal control problems — unlocking the full power of efficient optimal control solvers and enabling real-time robust decision-making that was previously out of reach.",
+    "note": "Retains the conditional reformulation claim; does not reproduce the stronger promotional language.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Robust sampling-based control",
+    "current": "Robust sampling-based control. We develop Model Predictive Path Integral (MPPI) methods that evaluate candidate trajectories in parallel on GPUs and compute control actions under disturbances.",
+    "raw": "Sampling-based control: fast, flexible, and robust. Methods like MPPI (Model Predictive Path Integral) explore many possible futures in parallel — on modern GPUs — to find control actions that are both optimal and robust to disturbances. No assumptions about the world being clean or predictable.",
+    "note": "Summarizes GPU trajectory sampling and disturbance handling; omits the original broad robustness claim.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Research detail rewrites",
+    "label": "Real-time receding horizon planning",
+    "current": "Real-time receding horizon planning. We develop controllers that repeatedly solve a finite-horizon planning problem and update the plan as the environment or available information changes.",
+    "raw": "Real-time receding horizon planning. We build systems that continuously re-plan over a rolling time horizon — combining the foresight of optimal control with the responsiveness of real-time computation. When the environment changes faster than any pre-computed plan can account for, the system adapts on the fly.",
+    "note": "Explains the receding-horizon mechanism directly. No performance result is added.",
+    "source": "Research",
+    "flag": false
+  },
+  {
+    "section": "Reorganization and unchanged information",
+    "label": "Page and section labels",
+    "current": "Research areas; Research team; Publications; Open positions; Recent publications; Lab overview; Methods; Applications.",
+    "raw": "Original labels include Our Team, Publications, Join Us, RESEARCH AREA, FOUNDATIONAL RESEARCH, APPLIED RESEARCH, VIDEOS, KEY PAPERS.",
+    "note": "Labels are my interface wording. Page labels and action buttons are not intended as factual statements or source quotations.",
+    "source": "Original labels + new UI text",
+    "flag": false
+  },
+  {
+    "section": "Reorganization and unchanged information",
+    "label": "People, applications, videos, and papers",
+    "current": "PI and affiliation moved to Home; application labels turned into responsive text; videos consolidated into grids; research reading lists rendered from publication records.",
+    "raw": "Original Team page, research figures, embedded videos, research key-paper lists, and Publications page.",
+    "note": "People and affiliation values are retained. Source figures are in public/images/. Video titles/IDs are retained. Paper records come from the Publications data; source sections can disagree on status, so current status should be reviewed separately.",
+    "source": "Multiple original pages",
+    "flag": false
+  },
+  {
+    "section": "Reorganization and unchanged information",
+    "label": "Contact and recruitment links",
+    "current": "Contact; Application instructions; Ph.D. & postdoctoral opportunities.",
+    "raw": "Original Join Us includes donggun_lee@ncsu.edu, graduate admissions instructions, and a section titled Postdoctoral Positions.",
+    "note": "Link labels are mine. Email and application destinations originate in the source. “Opportunities” includes invitations to inquire, not necessarily confirmed funded positions.",
+    "source": "Join Us",
+    "flag": false
+  }
+]
