@@ -36,7 +36,7 @@ const areas = [
   },
 ];
 
-function ResearchArea({ area, index }) {
+function ResearchArea({ area }) {
   const { blocks } = area;
   const foundational = blocks.findIndex(
     (block) =>
@@ -65,9 +65,6 @@ function ResearchArea({ area, index }) {
       <div className="document research-page">
         <header className="research-chapter-heading">
           <div className="research-chapter-title">
-            <span className="research-chapter-number" aria-hidden="true">
-              {String(index + 1).padStart(2, "0")}
-            </span>
             <h2 id={`${area.id}-title`}>
               {title}
               <span className="research-subtitle">{subtitle}</span>
@@ -165,8 +162,8 @@ export default function Research() {
         </div>
       </header>
       <p className="eyebrow research-area-label">RESEARCH AREAS</p>
-      {areas.map((area, index) => (
-        <ResearchArea key={area.id} area={area} index={index} />
+      {areas.map((area) => (
+        <ResearchArea key={area.id} area={area} />
       ))}
     </div>
   );

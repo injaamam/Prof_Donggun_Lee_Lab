@@ -2282,13 +2282,6 @@ h2 {
   gap: 28px;
   padding-bottom: 40px;
 }
-.research-chapter-number {
-  display: block;
-  color: var(--red);
-  font-family: var(--mono);
-  font-size: 13px;
-  margin-bottom: 16px;
-}
 .research-chapter-title h2 {
   font-family: 'DM Sans', sans-serif;
   font-size: clamp(30px, 3.2vw, 44px);
@@ -2516,10 +2509,6 @@ h2 {
     gap: 24px;
     padding-bottom: 28px;
   }
-  .research-chapter-number {
-    margin-bottom: 12px;
-    font-size: 11px;
-  }
   .research-chapter-title h2 {
     font-size: clamp(29px, 6vw, 38px);
     max-width: 540px;
@@ -2580,8 +2569,6 @@ h2 {
   background: #f3eee7;
 }
 #real-time-control .research-chapter-title { background: #eaf1ee; }
-.research-chapter-number { color: var(--area-accent); font-weight: 500; }
-.research-chapter-number::before { content: 'RESEARCH AREA '; }
 .research-chapter-title h2 { color: var(--ink); font-weight: 700; }
 .research-subtitle {
   color: #55594f;
