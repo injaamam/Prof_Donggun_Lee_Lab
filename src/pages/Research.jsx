@@ -138,7 +138,7 @@ export default function Research() {
           <SourceContent blocks={research.slice(3, 5)} />
         </div>
       </header>
-      <p className="eyebrow research-area-label">RESEARCH AREA</p>
+      <p className="eyebrow research-area-label">TWO RESEARCH AREAS</p>
       {areas.map((area, index) => (
         <ResearchArea key={area.id} area={area} index={index} />
       ))}

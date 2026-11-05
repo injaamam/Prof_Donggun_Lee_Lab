@@ -26,11 +26,17 @@ export default function Home() {
             systems precisely, efficiently, and effectively.
           </p>
           <div className="hero-actions">
-            <a className="button button-solid" href="/research">
-              Research areas <span>↗</span>
+            <a className="hero-action hero-action-primary" href="/research">
+              Research areas
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
-            <a className="text-link" href="/publications">
-              Publications ↗
+            <a className="hero-action hero-action-secondary" href="/publications">
+              Publications
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </a>
           </div>
         </div>
@@ -74,10 +80,7 @@ export default function Home() {
       </section>
       <section className="research-preview section-block" id="research">
         <div className="section-top">
-          <div>
-            <p className="eyebrow">01 / RESEARCH AREAS</p>
-            <h2>Safe autonomy & real-time control</h2>
-          </div>
+          <h2>Research areas</h2>
           <a className="text-link" href="/research">
             Research details ↗
           </a>
@@ -90,7 +93,7 @@ export default function Home() {
                 alt="Safety-filter control experiment"
                 loading="lazy"
               />
-              <span className="image-index">01 / SAFETY</span>
+              <span className="image-index">SAFETY</span>
             </div>
             <div className="research-feature-title">
               <h3>Data-driven safe autonomy</h3>
@@ -113,7 +116,7 @@ export default function Home() {
                 alt="Outdoor autonomous navigation experiment"
                 loading="lazy"
               />
-              <span className="image-index">02 / CONTROL</span>
+              <span className="image-index">CONTROL</span>
             </div>
             <div className="research-feature-title">
               <h3>Real-time robust control</h3>
@@ -132,10 +135,7 @@ export default function Home() {
       </section>
       <section className="section-block selected-work">
         <div className="section-top">
-          <div>
-            <p className="eyebrow">02 / PUBLICATIONS</p>
-            <h2>Recent publications</h2>
-          </div>
+          <h2>Recent publications</h2>
           <a className="text-link" href="/publications">
             All publications ↗
           </a>
@@ -152,10 +152,7 @@ export default function Home() {
       </section>
       <section className="section-block">
         <div className="section-top">
-          <div>
-            <p className="eyebrow">03 / EXPERIMENTS</p>
-            <h2>Robot experiments & control demonstrations</h2>
-          </div>
+          <h2>Robot experiments & control demonstrations</h2>
           <span className="small-note">
             Navigation, safety filtering, and robust control.
           </span>
@@ -168,7 +165,6 @@ export default function Home() {
       </section>
       <section className="join-banner">
         <div>
-          <p className="eyebrow">04 / OPEN POSITIONS</p>
           <h2>
             Ph.D. recruitment &<br />
             postdoctoral inquiries

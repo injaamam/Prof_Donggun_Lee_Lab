@@ -1804,10 +1804,62 @@ h2 {
   max-width: 600px;
 }
 .hero-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 185px), 1fr));
+  max-width: 440px;
+  gap: 12px;
+}
+.hero-action {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
+  min-height: 56px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.hero-action svg {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.hero-action-primary {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+.hero-action-primary:hover {
+  background: #93251e;
+  border-color: #93251e;
+  color: #fff;
+}
+.hero-action-secondary {
+  background: transparent;
+  border-color: #b7b9ae;
+  color: var(--ink);
+}
+.hero-action-secondary:hover {
+  background: #eeeee6;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.hero-action:hover svg,
+.hero-action:focus-visible svg {
+  transform: translate(2px, -2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-action,
+  .hero-action svg {
+    transition: none;
+  }
+  .hero-action:hover svg,
+  .hero-action:focus-visible svg {
+    transform: none;
+  }
 }
 .lab-overview {
   border-top: 2px solid var(--ink);
@@ -2390,4 +2442,50 @@ h2 {
     justify-content: start;
     gap: 10px 20px;
   }
+}
+
+/* Research area headings and content hierarchy. */
+.research-original .research-chapter {
+  --area-accent: #a52c25;
+  scroll-margin-top: 35px;
+  border-top: 0;
+}
+.research-original #real-time-control { --area-accent: #22665f; }
+.research-chapter-title {
+  padding: 28px 32px;
+  border-left: 4px solid var(--area-accent);
+  background: #f3eee7;
+}
+#real-time-control .research-chapter-title { background: #eaf1ee; }
+.research-chapter-number { color: var(--area-accent); font-weight: 500; }
+.research-chapter-number::before { content: 'RESEARCH AREA '; }
+.research-chapter-title h2 { color: var(--ink); font-weight: 700; }
+.research-subtitle {
+  color: #55594f;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.54em;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.research-focus-grid h3,
+.research-demonstrations > h3,
+.research-original .research-key-papers > h3 {
+  color: var(--area-accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+.research-focus-grid li, .research-chapter-description p { color: #41453e; }
+.research-focus-grid strong { font-size: 20px; }
+.research-focus-grid > section,
+.research-original .research-demonstrations,
+.research-original .research-key-papers { scroll-margin-top: 35px; }
+@media (max-width: 700px) {
+  .research-chapter-title { padding: 22px 18px; }
+  .research-subtitle { font-size: 18px; }
+  .research-focus-grid strong { font-size: 18px; }
+  .research-original .research-chapter { scroll-margin-top: 35px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
