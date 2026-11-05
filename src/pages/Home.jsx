@@ -1,7 +1,7 @@
-import VideoCard from '../components/VideoCard'
-import Publication from '../components/Publication'
-import content from '../data/source-content.json'
-import publications from '../data/publications.json'
+import VideoCard from "../components/VideoCard";
+import Publication from "../components/Publication";
+import content from "../data/source-content.json";
+import publications from "../data/publications.json";
 
 export default function Home() {
   return (
@@ -21,8 +21,9 @@ export default function Home() {
             Safe autonomy and real-time control for mobile robots.
           </h2>
           <p className="hero-description">
-            We develop control theory and algorithms that help robots navigate safely and respond to
-            disturbances, uncertain models, and incomplete sensor information.
+            We develop fundamental theories, design efficient numerical
+            algorithms, and test our ideas in the real world to control dynamic
+            systems precisely, efficiently, and effectively.
           </p>
           <div className="hero-actions">
             <a className="button button-solid" href="/research">
@@ -46,20 +47,22 @@ export default function Home() {
             <div>
               <dt>Department</dt>
               <dd>
-                Mechanical and Aerospace Engineering<span>NC State University · Raleigh, NC</span>
+                Mechanical and Aerospace Engineering
+                <span>NC State University · Raleigh, NC</span>
               </dd>
             </div>
             <div>
               <dt>Methods</dt>
               <dd>
-                Optimal control, Hamilton–Jacobi reachability, reinforcement learning, and
-                mathematical optimization
+                Optimal control, Hamilton–Jacobi reachability, reinforcement
+                learning, and mathematical optimization
               </dd>
             </div>
             <div>
               <dt>Applications</dt>
               <dd>
-                Ground vehicle navigation, autonomous driving, aerial vehicles, and legged robots
+                Ground vehicle navigation, autonomous driving, aerial vehicles,
+                and legged robots
               </dd>
             </div>
           </dl>
@@ -94,11 +97,14 @@ export default function Home() {
               <span>↗</span>
             </div>
             <p>
-              We study when learning-based methods can provide provable safety guarantees using
-              Hamilton–Jacobi reachability and control barrier functions, including under model
-              uncertainty and incomplete sensing.
+              We study when learning-based methods can provide provable safety
+              guarantees using Hamilton–Jacobi reachability and control barrier
+              functions, including under model uncertainty and incomplete
+              sensing.
             </p>
-            <span className="eyebrow">REACHABILITY · LEARNING · FORMAL SAFETY</span>
+            <span className="eyebrow">
+              REACHABILITY · LEARNING · FORMAL SAFETY
+            </span>
           </a>
           <a className="research-feature" href="/research#real-time-control">
             <div className="research-visual">
@@ -114,10 +120,13 @@ export default function Home() {
               <span>↗</span>
             </div>
             <p>
-              We develop efficient optimal control solvers and model predictive control methods for
-              robots that must replan in real time and handle disturbances.
+              We develop efficient optimal control solvers and model predictive
+              control methods for robots that must replan in real time and
+              handle disturbances.
             </p>
-            <span className="eyebrow">OPTIMIZATION · PLANNING · ROBUST CONTROL</span>
+            <span className="eyebrow">
+              OPTIMIZATION · PLANNING · ROBUST CONTROL
+            </span>
           </a>
         </div>
       </section>
@@ -132,7 +141,7 @@ export default function Home() {
           </a>
         </div>
         {publications
-          .filter((p) => p.year !== 'Under Review')
+          .filter((p) => p.year !== "Under Review")
           .slice(0, 3)
           .map((p) => (
             <div className="selected-paper" key={p.title}>
@@ -147,7 +156,9 @@ export default function Home() {
             <p className="eyebrow">03 / EXPERIMENTS</p>
             <h2>Robot experiments & control demonstrations</h2>
           </div>
-          <span className="small-note">Navigation, safety filtering, and robust control.</span>
+          <span className="small-note">
+            Navigation, safety filtering, and robust control.
+          </span>
         </div>
         <div className="video-grid">
           {content.homeVideos.map((video) => (
@@ -165,8 +176,9 @@ export default function Home() {
         </div>
         <div>
           <p>
-            We are recruiting 2–3 Ph.D. students in control, robotics, optimization, and learning.
-            Prospective postdoctoral researchers can contact Prof. Lee about research opportunities.
+            We are recruiting 2–3 Ph.D. students in control, robotics,
+            optimization, and learning. Prospective postdoctoral researchers can
+            contact Prof. Lee about research opportunities.
           </p>
           <a className="button button-light" href="/join-us">
             Application instructions <span>↗</span>
@@ -174,5 +186,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
