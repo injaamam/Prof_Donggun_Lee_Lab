@@ -28,14 +28,41 @@ export default function Home() {
           <div className="hero-actions">
             <a className="hero-action hero-action-primary" href="/research">
               Research areas
-              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+              <svg
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18 18 6M6 6h12v12"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
-            <a className="hero-action hero-action-secondary" href="/publications">
+            <a
+              className="hero-action hero-action-secondary"
+              href="/publications"
+            >
               Publications
-              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <path d="M6 18 18 6M6 6h12v12" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+              <svg
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6 18 18 6M6 6h12v12"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
           </div>
@@ -46,7 +73,9 @@ export default function Home() {
             <div>
               <dt>Principal investigator</dt>
               <dd>
-                <a href="https://mae.ncsu.edu/people/dlee48/">Dr. Donggun Lee ↗</a>
+                <a href="https://mae.ncsu.edu/people/dlee48/">
+                  Dr. Donggun Lee ↗
+                </a>
                 <span>Assistant Professor</span>
               </dd>
             </div>
@@ -105,9 +134,6 @@ export default function Home() {
               functions, including under model uncertainty and incomplete
               sensing.
             </p>
-            <span className="eyebrow">
-              REACHABILITY · LEARNING · FORMAL SAFETY
-            </span>
           </a>
           <a className="research-feature" href="/research#real-time-control">
             <div className="research-visual">
@@ -127,9 +153,6 @@ export default function Home() {
               control methods for robots that must replan in real time and
               handle disturbances.
             </p>
-            <span className="eyebrow">
-              OPTIMIZATION · PLANNING · ROBUST CONTROL
-            </span>
           </a>
         </div>
       </section>
@@ -175,8 +198,8 @@ export default function Home() {
         <div>
           <p>
             We are recruiting 2–3 Ph.D. students in control, robotics,
-            optimization, and learning. Prospective postdoctoral researchers can
-            contact Prof. Lee about research opportunities.
+            optimization, and learning. Prospective candidates can contact Prof.
+            Lee about research opportunities.
           </p>
           <a className="button button-light" href="/join-us">
             Application instructions <span>↗</span>
