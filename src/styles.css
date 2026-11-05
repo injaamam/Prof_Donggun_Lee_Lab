@@ -1610,6 +1610,104 @@ input::placeholder {
     display: none;
   }
 }
+/* Join Us: distinct application paths, compact groups of instructions. */
+.join-us-page .opportunity-note {
+  padding-block: 15px;
+}
+.join-us-page .opportunity-note > span:nth-child(2) {
+  font-weight: 600;
+}
+.join-us-page .application-section {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.22fr);
+  gap: 48px;
+  padding-block: 40px;
+  align-items: start;
+}
+.join-us-page .section-marker {
+  gap: 10px;
+}
+.join-us-page .section-marker .eyebrow {
+  color: var(--red);
+  font-weight: 500;
+}
+.join-us-page .section-marker h2 {
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.1;
+}
+.join-us-page .section-marker > p {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  max-width: 30ch;
+}
+.join-us-page .application-overview > p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.join-us-page .application-group {
+  margin-top: 24px;
+}
+.join-us-page .application-group h3 {
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.join-us-page .application-group > p,
+.join-us-page .application-group li {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #55594f;
+}
+.join-us-page .application-group > p {
+  margin-bottom: 9px;
+}
+.join-us-page .application-group > p:last-child {
+  margin-bottom: 0;
+}
+.join-us-page .join-page ul {
+  margin: 10px 0 0;
+}
+.join-us-page .join-page li {
+  gap: 14px;
+  padding-block: 8px;
+}
+.join-us-page .join-page li::before {
+  flex: 0 0 20px;
+  padding-top: 3px;
+}
+.join-us-page .join-page li:first-child {
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+}
+.join-us-page .join-page li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 760px) {
+  .join-us-page .application-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-block: 30px;
+  }
+  .join-us-page .section-marker {
+    gap: 8px;
+  }
+  .join-us-page .section-marker > p {
+    max-width: 48ch;
+  }
+  .join-us-page .application-overview > p {
+    font-size: 16px;
+  }
+  .join-us-page .application-group {
+    margin-top: 20px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
