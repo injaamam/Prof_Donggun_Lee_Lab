@@ -123,6 +123,7 @@ function ResearchArea({ area }) {
                       key={link.url}
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={`${link.label}: ${paper.title}`}
                     >
                       {link.label}
                     </a>
