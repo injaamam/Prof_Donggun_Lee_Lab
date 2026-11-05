@@ -1088,6 +1088,14 @@ input::placeholder {
 .footer-grid .text-link {
   font-size: 11px;
 }
+.footer-grid .footer-contact-name {
+  margin-bottom: 4px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.footer-contact-name + .footer-email {
+  margin-top: 0;
+}
 .footer-email {
   display: block;
   text-decoration: none;

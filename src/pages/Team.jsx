@@ -28,6 +28,14 @@ export default function Team() {
           </p>
           <div className="education">
             <p>
+              <span>Current</span>
+              <span>
+                Assistant Professor, North Carolina State University
+                <br />
+                <small>Mechanical and Aerospace Engineering</small>
+              </span>
+            </p>
+            <p>
               <span>2022–2023</span>
               <span>
                 Postdoctoral Associate, MIT

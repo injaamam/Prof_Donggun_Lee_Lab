@@ -92,8 +92,9 @@ export default function Layout({ pathname, children }) {
           </div>
           <div>
             <span className="eyebrow">CONTACT</span>
+            <p className="footer-contact-name">Dr. Donggun Lee</p>
             <a className="footer-email" href="mailto:donggun_lee@ncsu.edu">
-              donggun_lee@ncsu.edu ↗
+              donggun_lee@ncsu.edu
             </a>
             <a className="text-link" href="/join-us">
               Ph.D. & postdoctoral opportunities ↗
