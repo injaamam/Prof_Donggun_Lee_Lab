@@ -2390,7 +2390,7 @@ h2 {
 }
 .research-chapter-title h2 {
   font-family: 'DM Sans', sans-serif;
-  font-size: clamp(30px, 3.2vw, 44px);
+  font-size: calc(clamp(30px, 3.2vw, 44px) - 2px);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.04em;
@@ -2628,7 +2628,7 @@ h2 {
     padding-bottom: 28px;
   }
   .research-chapter-title h2 {
-    font-size: clamp(29px, 6vw, 38px);
+    font-size: calc(clamp(29px, 6vw, 38px) - 2px);
     max-width: 540px;
     text-wrap: initial;
   }
