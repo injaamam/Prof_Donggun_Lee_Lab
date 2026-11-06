@@ -2780,6 +2780,18 @@ h2 {
   height: 2px;
   background: var(--area-accent);
 }
+.research-focus-grid h3 {
+  color: var(--area-accent);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+.research-focus-grid h3::before {
+  flex-basis: 3px;
+  height: 24px;
+}
 .research-focus-grid li, .research-chapter-description p { color: #55594f; }
 .research-focus-grid strong {
   font-size: 18px;
@@ -2816,6 +2828,7 @@ h2 {
   .research-focus-grid h3,
   .research-demonstrations > h3,
   .research-original .research-key-papers > h3 { font-size: 28px; }
+  .research-focus-grid h3 { font-size: 22px; }
   .research-focus-grid li { margin-bottom: 28px; }
   .research-focus-grid { margin-bottom: 36px; }
   .research-original .research-key-papers { margin-top: 36px; }
