@@ -142,11 +142,13 @@ export default function Research() {
   return (
     <div className="research-original">
       <header className="research-intro">
+        <div className="research-intro-heading">
+        <p className="research-intro-label">INTELLIGENT CONTROLS LAB</p>
         <h1>
           We make mobile robots
-          <br />
-          more intelligent.
+          <span>more intelligent.</span>
         </h1>
+        </div>
         <ul className="research-qualities" aria-label="Research goals">
           {[
             "EFFECTIVE",
