@@ -2729,6 +2729,7 @@ h2 {
 .research-original #real-time-control {
   --area-accent: #22665f;
   --area-tint: #e5eeea;
+  border-top: 1px solid var(--line);
 }
 .research-chapter-title {
   padding: 18px 30px;
@@ -2763,30 +2764,47 @@ h2 {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--area-accent);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
 }
 .research-focus-grid h3::before,
 .research-demonstrations > h3::before,
 .research-original .research-key-papers > h3::before {
   content: '';
-  flex: 0 0 22px;
+  flex: 0 0 16px;
   height: 2px;
   background: var(--area-accent);
 }
 .research-focus-grid li, .research-chapter-description p { color: #55594f; }
 .research-focus-grid strong {
-  font-size: 20px;
-  font-weight: 650;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--ink);
   line-height: 1.35;
   margin-bottom: 10px;
 }
-.research-focus-grid li { margin-bottom: 36px; }
+.research-focus-grid li {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+.research-focus-grid li + li {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+.research-focus-grid li:last-child { margin-bottom: 0; }
+.research-focus-grid .application-types { margin-top: 24px; }
 .research-focus-grid { margin-bottom: 52px; }
-.research-original .research-key-papers { margin-top: 52px; }
+.research-original .research-key-papers {
+  margin-top: 52px;
+  border-top: 1px solid var(--line);
+  padding-top: 28px;
+}
 .research-original .research-key-papers > h3 { margin-bottom: 16px; }
 .research-focus-grid > section,
 .research-original .research-demonstrations,
@@ -2795,6 +2813,9 @@ h2 {
   .research-chapter-title { padding: 16px 18px; }
   .research-subtitle { font-size: 18px; }
   .research-focus-grid strong { font-size: 18px; }
+  .research-focus-grid h3,
+  .research-demonstrations > h3,
+  .research-original .research-key-papers > h3 { font-size: 28px; }
   .research-focus-grid li { margin-bottom: 28px; }
   .research-focus-grid { margin-bottom: 36px; }
   .research-original .research-key-papers { margin-top: 36px; }

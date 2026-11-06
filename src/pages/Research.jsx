@@ -84,14 +84,14 @@ function ResearchArea({ area }) {
             id={`${area.id}-foundations`}
             aria-labelledby={`${area.id}-foundations-title`}
           >
-            <h3 id={`${area.id}-foundations-title`}>FOUNDATIONAL RESEARCH</h3>
+            <h3 id={`${area.id}-foundations-title`}>Foundational research</h3>
             <SourceContent blocks={blocks.slice(foundational + 1, applied)} />
           </section>
           <section
             id={`${area.id}-applied`}
             aria-labelledby={`${area.id}-applied-title`}
           >
-            <h3 id={`${area.id}-applied-title`}>APPLIED RESEARCH</h3>
+            <h3 id={`${area.id}-applied-title`}>Applied research</h3>
             <SourceContent blocks={blocks.slice(applied + 1, videoStart)} />
           </section>
         </div>
@@ -100,7 +100,7 @@ function ResearchArea({ area }) {
           id={`${area.id}-videos`}
           aria-labelledby={`${area.id}-videos-title`}
         >
-          <h3 id={`${area.id}-videos-title`}>VIDEOS</h3>
+          <h3 id={`${area.id}-videos-title`}>Videos</h3>
           <div className="video-grid research-videos">
             {videos.map((video) => (
               <VideoCard key={video.id} {...video} />
@@ -112,7 +112,7 @@ function ResearchArea({ area }) {
           id={`${area.id}-papers`}
           aria-labelledby={`${area.id}-papers-title`}
         >
-          <h3 id={`${area.id}-papers-title`}>KEY PAPERS</h3>
+          <h3 id={`${area.id}-papers-title`}>Key papers</h3>
           {area.papers.map(([prefix, venue]) => {
             const paper = publications.find((entry) =>
               entry.title.startsWith(prefix),
