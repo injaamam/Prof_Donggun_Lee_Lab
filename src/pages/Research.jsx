@@ -12,6 +12,7 @@ const split = research.findIndex(
 const areas = [
   {
     id: "safe-autonomy",
+    number: "01",
     title: "Data-Driven Safe Autonomy & Theoretical Guarantees",
     blocks: research.slice(6, split),
     papers: [
@@ -24,6 +25,7 @@ const areas = [
   },
   {
     id: "real-time-control",
+    number: "02",
     title: "Real-Time Control Schemes — Robustness & Adaptability",
     blocks: research.slice(split),
     papers: [
@@ -65,6 +67,9 @@ function ResearchArea({ area }) {
       <div className="document research-page">
         <header className="research-chapter-heading">
           <div className="research-chapter-title">
+            <span className="research-area-number" aria-hidden="true">
+              {area.number}
+            </span>
             <h2 id={`${area.id}-title`}>
               {title}
               <span className="research-subtitle">{subtitle}</span>
